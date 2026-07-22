@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.layrdui.in"),
+  metadataBase: new URL("https://www.orbitui.in"),
   title: {
-    default: "LayrdUI - Beautiful UI Templates & Components",
-    template: "%s | LayrdUI",
+    default: "orbitui - Beautiful UI Templates & Components",
+    template: "%s | orbitui",
   },
   description:
-    "LayrdUI offers beautiful, responsive UI templates and components built with React, TypeScript, and Tailwind CSS — helping developers ship faster with production-ready blocks.",
+    "orbitui offers beautiful, responsive UI templates and components built with React, TypeScript, and Tailwind CSS — helping developers ship faster with production-ready blocks.",
   keywords: [
-    "LayrdUI",
+    "orbitui",
     "UI components",
     "Next.js templates",
     "React components",
@@ -33,19 +33,19 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Dhruv Tripathi" }],
   creator: "Dhruv Tripathi",
-  publisher: "LayrdUI",
+  publisher: "orbitui",
   openGraph: {
-    title: "LayrdUI - Beautiful UI Templates & Components",
+    title: "orbitui - Beautiful UI Templates & Components",
     description:
-      "Build stunning web interfaces faster with LayrdUI — responsive templates and reusable UI blocks for modern web apps.",
-    url: "https://www.layrdui.in",
-    siteName: "LayrdUI",
+      "Build stunning web interfaces faster with orbitui — responsive templates and reusable UI blocks for modern web apps.",
+    url: "https://www.orbitui.in",
+    siteName: "orbitui",
     images: [
       {
-        url: "https://www.layrdui.in/og-image.png",
+        url: "https://www.orbitui.in/og-image.png",
         width: 1200,
         height: 630,
-        alt: "LayrdUI - Beautiful UI Templates & Components",
+        alt: "orbitui - Beautiful UI Templates & Components",
       },
     ],
     locale: "en_US",
@@ -53,10 +53,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LayrdUI - Beautiful UI Templates & Components",
+    title: "orbitui - Beautiful UI Templates & Components",
     description:
       "Beautiful, responsive UI templates built with React, TypeScript, and Tailwind CSS.",
-    images: ["https://www.layrdui.in/og-image.png"],
+    images: ["https://www.orbitui.in/og-image.png"],
     creator: "@dhruvtripathi",
   },
   icons: {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://www.layrdui.in",
+    canonical: "https://www.orbitui.in",
   },
 };
 

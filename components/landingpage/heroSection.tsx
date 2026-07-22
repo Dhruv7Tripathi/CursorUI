@@ -157,7 +157,6 @@ export const HeroSection = () => {
                                     </p>
                                     <div className="flex space-x-2 ">
                                         <Button
-                                            asChild
                                             className="pointer-events-auto mt-2 hover:bg-background border-1 border-neutral-200 dark:border-neutral-700 rounded-sm bg-background px-5 py-2 text-sm font-medium text-neutral-900 dark:text-neutral-50 shadow-md "
                                         >
                                             <Link href="/templates/polar-auth">View Template</Link>
@@ -214,7 +213,6 @@ export const HeroSection = () => {
                                         The Linear Template empowers you to launch intelligent, interactive web experiences with ease. Built for modern startups, it features a sleek design, seamless chat UI, and robust integration options.
                                     </p>
                                     <Button
-                                        asChild
                                         className="pointer-events-auto  mt-3 hover:bg-background border-1 border-neutral-200 dark:border-neutral-700 rounded-sm bg-background px-5 py-2 text-sm font-medium text-neutral-900 dark:text-neutral-50 shadow-md "
                                     >
                                         <Link href="/templates/linear-template">View Template</Link>
@@ -276,7 +274,6 @@ export const HeroSection = () => {
                                         Bloggify is a modern, minimalistic blog template designed for startups and creators. Built with Next.js and Tailwind CSS, it features elegant layouts, and easy customization.
                                     </p>
                                     <Button
-                                        asChild
                                         className="pointer-events-auto mt-2 hover:bg-background border-1 border-neutral-200 dark:border-neutral-700 rounded-sm bg-background px-5 py-2 text-sm font-medium text-neutral-900 dark:text-neutral-50 shadow-md "
                                     >
                                         <Link href="/templates/bloggify-template">View Template</Link>
@@ -337,7 +334,6 @@ export const HeroSection = () => {
                                         Pheonix Portfolio is a simple, modern portfolio template built with Tailwind CSS and TypeScript on Next.js.
                                     </p>
                                     <Button
-                                        asChild
                                         className="pointer-events-auto mt-2 rounded-sm border-1 border-neutral-200 dark:border-neutral-700 bg-background px-5 py-2 text-sm font-medium text-neutral-900 dark:text-neutral-50 shadow-md hover:bg-background "
                                     >
                                         <Link href="/templates/pheonix-portfolio">View Template</Link>
