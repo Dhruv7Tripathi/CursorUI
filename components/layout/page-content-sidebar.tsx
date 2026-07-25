@@ -98,7 +98,6 @@ const PageContentSidebar = () => {
               </div>
             </div>
           </div>
-          <ForgeUIProPromo />
           <ShadcnStudioPromo />
         </div>
       </ScrollArea>
@@ -107,59 +106,6 @@ const PageContentSidebar = () => {
 };
 
 export default PageContentSidebar;
-
-const ForgeUIProPromo = () => {
-  return (
-    <div className="group relative overflow-hidden rounded-lg bg-neutral-100 ring-1 ring-neutral-100 dark:bg-neutral-900 dark:ring-neutral-800/70">
-      <div className="relative space-y-4 p-4">
-        <div className="space-y-1">
-          <p className="text-xl font-medium tracking-tight text-neutral-900 dark:text-white">
-            ForgeUI Pro
-          </p>
-          <p className="text-xl font-medium tracking-tight text-neutral-500 dark:text-neutral-400">
-            Ship real interfaces, faster
-          </p>
-        </div>
-
-        <ul className="space-y-2 text-[13px] text-neutral-900 dark:text-neutral-100">
-          <li className="flex items-start gap-2">
-            <span className="mt-1.25 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
-            7+ complete templates for real products
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="mt-1.25 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
-            100+ refined, production-ready components
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="mt-1.25 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
-            Copy, paste, and move on with your life
-          </li>
-        </ul>
-
-        <Link
-          href="https://pro.forgeui.in"
-          target="_blank"
-          className={cn(
-            "relative flex cursor-pointer items-center justify-center",
-            "rounded-sm bg-neutral-950 px-4 py-3 text-xs font-medium text-white",
-            "dark:bg-neutral-50 dark:text-neutral-900",
-            "overflow-hidden hover:bg-black dark:hover:bg-white",
-
-            "after:pointer-events-none after:absolute after:bottom-0 after:left-0 after:h-[30%] after:w-full hover:after:h-[20%]",
-            "after:bg-linear-to-t after:from-white/35 after:to-transparent dark:after:from-black/20",
-            "transition-all duration-300",
-          )}
-        >
-          Unlock lifetime access
-        </Link>
-
-        <p className="text-xs leading-relaxed text-neutral-600 dark:text-neutral-400">
-          For developers who care about speed, polish, and taste.
-        </p>
-      </div>
-    </div>
-  );
-};
 
 const ShadcnStudioPromo = () => {
   return (
