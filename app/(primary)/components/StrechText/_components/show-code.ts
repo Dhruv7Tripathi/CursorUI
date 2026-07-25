@@ -1,8 +1,8 @@
-export const title = "Animated Form";
-export const routepoint = "animated-form";
-export const description = "Animated form mimicking account creation with progressive name/password animation and completion checkmarks.";
+export const title = "Stretch Text";
+export const routepoint = "stretch-text";
+export const description = "Interactive stretch text component with mouse and touch support.";
 
-export const cliscript = "add @forgeui/animated-form";
+export const cliscript = "add @orbitui/stretch-text";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,
