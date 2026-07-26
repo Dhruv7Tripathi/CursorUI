@@ -1,27 +1,10 @@
 "use client";
 import { CodeIcon, TerminalIcon } from "lucide-react";
-// react-syntax-highlighter is optional in some environments. Load dynamically
-// to avoid build-time errors when the package or its types are not present.
-let SyntaxHighlighter: any = null;
-let oneLight: any = null;
-let oneDark: any = null;
-try {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const rsh = require("react-syntax-highlighter");
-  // Prefer Prism export if available
-  SyntaxHighlighter = rsh.Prism || rsh;
-  // styles may be under dist/cjs/styles/prism
-  try {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const styles = require("react-syntax-highlighter/dist/cjs/styles/prism");
-    oneLight = styles.oneLight;
-    oneDark = styles.oneDark;
-  } catch (e) {
-    // ignore style import errors
-  }
-} catch (e) {
-  // If the package isn't installed, we'll fallback to a plain <pre> renderer below.
-}
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  oneDark,
+  oneLight,
+} from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import { CopyCode } from "./CopyCode";
 import { cn } from "@/lib/utils";
@@ -126,3 +109,11 @@ export function CodeBlock({
     </div>
   );
 }
+console.log({
+  SyntaxHighlighter,
+  oneDark,
+  oneLight,
+  CodeIcon,
+  TerminalIcon,
+  CopyCode,
+});

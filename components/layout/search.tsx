@@ -11,15 +11,15 @@ import {
   CommandSeparator,
 } from "@/components/ui/command";
 import { primaryItems } from "@/contants";
-import { eliteItems } from "@/contants";
+// import { eliteItems } from "@/contants";
 
 const DocumentSearch = () => {
   const sortedPrimaryItems = [...primaryItems].sort((a, b) =>
     a.name.localeCompare(b.name),
   );
-  const sortedEliteItems = [...eliteItems].sort((a, b) =>
-    a.name.localeCompare(b.name),
-  );
+  // const sortedEliteItems = [...eliteItems].sort((a, b) =>
+  //   a.name.localeCompare(b.name),
+  // );
   const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
@@ -68,11 +68,11 @@ const DocumentSearch = () => {
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Featured Components" className="mb-5 mt-2">
             <CommandSeparator />
-            {sortedEliteItems.map((item) => (
+            {/* {sortedEliteItems.map((item) => (
               <a href={item.href} key={item.name}>
                 <CommandItem>{item.name}</CommandItem>
               </a>
-            ))}
+            ))} */}
           </CommandGroup>
           <CommandGroup heading="Basic Components" className="my-2">
             <CommandSeparator />

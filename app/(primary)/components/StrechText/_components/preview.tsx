@@ -10,7 +10,6 @@ import {
   commandMap,
   utilcode,
   packagesMap,
-  animatedFormProps,
 } from "./show-code";
 import ToggleButtonGroup from "@/components/content/togglebuttongroup";
 import MainTitle from "@/components/content/maintitle";

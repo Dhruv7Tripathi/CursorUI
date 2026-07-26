@@ -28,22 +28,6 @@ export const packagesMap = {
   bun: `bun add ${packagescript}`,
 };
 
-export const animatedFormProps = [
-  {
-    prop: "name",
-    type: "string",
-    default: "Alex Morgan",
-    description: "The name to display in the animated form component.",
-  },
-  {
-    prop: "delay",
-    type: "number",
-    default: "7000",
-    description: "Time interval (in milliseconds) after which the animation restarts.",
-  },
-];
-
-
 export const democode = `import StretchContact from "@/components/textStretch";';
 
 export function ${title.replace(/\s+/g, "")}Example() {
