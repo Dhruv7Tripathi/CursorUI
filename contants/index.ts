@@ -56,13 +56,11 @@ export const introItems = [
 ]
 
 export const primaryItems = [
-  { name: 'Login and Signup', href: '/components/login-and-signup-sections' },
-  { name: 'ContactUs', href: '/components/contact-us' },
-  { name: 'Footers', href: '/components/footers' },
-  { name: 'Pricing Section', href: '/components/pricing-sections' },
-  { name: 'FAQs', href: '/components/faqs' },
-  { name: 'Hero Section', href: '/components/hero-section' },
-  { name: 'Navbars', href: '/components/navbars' },
+  { name: 'Gravity Well', href: '/components/GravityWell' },
+  { name: 'Stretch Text', href: '/components/StrechText' },
+  { name: 'Fluid Cube Grid', href: '/components/FluidCubeGrid' },
+  { name: 'Shatter Glass', href: '/components/ShatterGlass' },
+  { name: 'Verlet Rope', href: '/components/VerletRope' },
 ];
 // export const eliteItems = [
 //   { name: 'Syntax Template', href: '/templates/saas-template' },
