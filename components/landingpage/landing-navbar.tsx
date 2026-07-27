@@ -46,7 +46,7 @@ export default function Navbar() {
               className=" flex items-center p-2 m-2 mr-4 space-x-2">
               <StackedLayersLogo />
               {/* <Image src="/logo.png" alt="Logo" width={30} height={30} className="rounded-sm" /> */}
-              <span className='text-2xl  space-x-2.5 font-bold'>LayrdUI</span>
+              <span className='text-2xl  space-x-2.5 font-bold'>OrbitUI</span>
             </Link>
 
             <div

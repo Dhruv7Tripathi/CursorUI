@@ -14,7 +14,7 @@ export const Footer = () => {
                 aria-label="home"
                 className=" flex items-center space-x-4">
                 <StackedLayersLogo />
-                <span className='text-2xl font-bold'>LayrdUI</span>
+                <span className='text-2xl font-bold'>OrbitUI</span>
               </Link>
               <div className="mr-2 mt-4 max-w-fit">
                 <Link
@@ -36,7 +36,7 @@ export const Footer = () => {
                 </Link>
               </div>
               <p className="mt-5 text-sm text-zinc-500 dark:text-zinc-400">
-                © {new Date().getFullYear()} LayrdUI. All rights reserved.
+                © {new Date().getFullYear()} OrbitUI. All rights reserved.
               </p>
             </div>
 
@@ -89,7 +89,7 @@ export const Footer = () => {
       </div>
       <div className="hidden w-full items-center justify-center md:flex">
         <h1 className="select-none pb-10 bg-gradient-to-b from-neutral-200 to-neutral-400 bg-clip-text text-center text-3xl font-bold text-transparent dark:from-neutral-700 dark:to-neutral-900 md:text-7xl lg:text-[15rem]">
-          Layrd UI
+          Orbit UI
         </h1>
       </div>
       <div className="border-t-border-gray-200">
