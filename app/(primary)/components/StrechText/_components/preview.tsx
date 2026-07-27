@@ -25,6 +25,32 @@
   // import PropsTable from "@/components/content/props-table";
   import StretchContact from "./stretchtext";
   import LivePreviewComponent from "@/components/layout/livepreview";
+"use client";
+import React, { useState } from "react";
+import Dependencies from "@/components/content/dependencies";
+import {
+  code,
+  democode,
+  title,
+  description,
+  routepoint,
+  commandMap,
+  utilcode,
+  packagesMap,
+} from "./show-code";
+import ToggleButtonGroup from "@/components/content/togglebuttongroup";
+import MainTitle from "@/components/content/maintitle";
+import PreviewComponentContainer from "@/components/content/previewcomponentcontainer";
+import MainContentContainer from "@/components/content/maincontentcontainer";
+import ComponentNavigation from "@/components/layout/componentnavigation";
+import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
+import { ComponentSource } from "@/components/code/componentsource";
+import { CommandBlock } from "@/components/code/command-block";
+import ToggleManualCli from "@/components/content/togglemanualcli";
+import { CodeBlock } from "@/components/code/CodeBlock";
+// import PropsTable from "@/components/content/props-table";
+import StretchContact from "./stretchtext";
+import LivePreviewComponent from "@/components/layout/livepreview";
 
   const StretchContactPreview = () => {
     const [sourceCode, setSourceCode] = useState(false);

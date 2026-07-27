@@ -62,15 +62,15 @@ export const primaryItems = [
   { name: 'Shatter Glass', href: '/components/ShatterGlass' },
   { name: 'Verlet Rope', href: '/components/VerletRope' },
 ];
-export const eliteItems = [
-  { name: 'Syntax Template', href: '/templates/saas-template' },
-  // { name: 'Simple Portfolio', href: '/templates/simple-portfolio' },
-  // { name: 'SideFolio', href: '/templates/sidefolio' },
-  { name: 'Polar Auth', href: '/templates/polar-auth' },
-  { name: 'Linear', href: '/templates/linear-template' },
-  { name: 'Dhruv Portfolio', href: '/templates/dhruv-portfolio' },
-  { name: 'Pheonix Portfolio', href: '/templates/pheonix-portfolio' },
-  { name: 'Quizzer Template', href: '/templates/quizzer-template' },
-  { name: 'AI-Agent', href: '/templates/ai-agent' },
-  { name: 'Bloggify', href: '/templates/bloggify-template' },
-];
+// export const eliteItems = [
+//   { name: 'Syntax Template', href: '/templates/saas-template' },
+//   // { name: 'Simple Portfolio', href: '/templates/simple-portfolio' },
+//   // { name: 'SideFolio', href: '/templates/sidefolio' },
+//   { name: 'Polar Auth', href: '/templates/polar-auth' },
+//   { name: 'Linear', href: '/templates/linear-template' },
+//   { name: 'Dhruv Portfolio', href: '/templates/dhruv-portfolio' },
+//   { name: 'Pheonix Portfolio', href: '/templates/pheonix-portfolio' },
+//   { name: 'Quizzer Template', href: '/templates/quizzer-template' },
+//   { name: 'AI-Agent', href: '/templates/ai-agent' },
+//   { name: 'Bloggify', href: '/templates/bloggify-template' },
+// ];
