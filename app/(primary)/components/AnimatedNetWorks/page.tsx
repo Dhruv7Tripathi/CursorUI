@@ -1,13 +1,13 @@
-import StretchContactPreview from "./_components/preview";
+import AnimatedNetworksPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Stretch Contact | OrbitUI",
+  title: "Retro Shader | OrbitUI",
   description:
-    "OrbitUI's Animated Form component helps developers create visually engaging and interactive forms with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality form component into your projects.",
+    "OrbitUI's Retro Shader component helps developers create visually engaging and interactive retro-style shaders with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality shader component into your projects.",
   keywords: [
-    "Animated Form Component",
-    "React Form Animation",
+    "Retro Shader Component",
+    "React Shader Animation",
     "Framer Motion Forms",
     "Tailwind CSS Forms",
     "OrbitUI Components",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   category: "developer",
 };
 const Page = () => {
-  return <StretchContactPreview />;
+  return <AnimatedNetworksPreview />;
 };
 
 export default Page;

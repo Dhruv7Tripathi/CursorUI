@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     "Developer Tools",
     "SaaS UI Components",
     "Interactive Forms React",
-    "ForgeUI by Aman Shakya",
     "React Form UI",
     "Reusable Form Components",
     "Motion UI React",
