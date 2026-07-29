@@ -1,18 +1,18 @@
-import AnimatedNetworkPreview from "./_components/preview";
+import SplitFlapTextPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Retro Shader | OrbitUI",
+  title: "Split Flap Text | OrbitUI",
   description:
-    "OrbitUI's Retro Shader component helps developers create visually engaging and interactive retro-style shaders with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality shader component into your projects.",
+    "OrbitUI's Split Flap Text component helps developers create visually engaging and interactive split flap text displays with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality component into your projects.",
   keywords: [
-    "Retro Shader Component",
-    "React Shader Animation",
-    "Framer Motion Forms",
-    "Tailwind CSS Forms",
+    "Split Flap Text Component",
+    "React Text Animation",
+    "Framer Motion Text",
+    "Tailwind CSS Text",
     "OrbitUI Components",
     "UI Animation Library",
-    "Smooth Form Transitions",
+    "Smooth Text Transitions",
     "React UI Kit",
     "Open Source UI Components",
     "Frontend Design System",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   category: "developer",
 };
 const Page = () => {
-  return <AnimatedNetworkPreview />;
+  return <SplitFlapTextPreview />;
 };
 
 export default Page;

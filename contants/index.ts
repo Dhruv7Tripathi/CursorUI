@@ -57,7 +57,10 @@ export const introItems = [
 
 export const primaryItems = [
   { name: 'Gravity Well', href: '/components/GravityWell' },
-  { name: 'Stretch Text', href: '/components/StrechText' },
+  { name: 'Split Flap Text', href: '/components/SplitFlapText' },
+  { name: 'Stretch Text', href: '/components/StretchText' },
+  { name: 'Animated Networks', href: '/components/AnimatedNetworks' },
+  { name: 'Retro Shader', href: '/components/RetroShader' },
   { name: 'Fluid Cube Grid', href: '/components/FluidCubeGrid' },
   { name: 'Shatter Glass', href: '/components/ShatterGlass' },
   { name: 'Verlet Rope', href: '/components/VerletRope' },
