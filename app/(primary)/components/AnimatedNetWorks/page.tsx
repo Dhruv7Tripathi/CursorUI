@@ -2,17 +2,17 @@ import AnimatedNetworkPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Retro Shader | OrbitUI",
+  title: "Animated Networks | OrbitUI",
   description:
-    "OrbitUI's Retro Shader component helps developers create visually engaging and interactive retro-style shaders with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality shader component into your projects.",
+    "OrbitUI's Animated Networks component helps developers create visually engaging and interactive network visualizations with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality network component into your projects.",
   keywords: [
-    "Retro Shader Component",
-    "React Shader Animation",
-    "Framer Motion Forms",
-    "Tailwind CSS Forms",
+    "Animated Networks Component",
+    "React Network Animation",
+    "Framer Motion Networks",
+    "Tailwind CSS Networks",
     "OrbitUI Components",
     "UI Animation Library",
-    "Smooth Form Transitions",
+    "Smooth Network Transitions",
     "React UI Kit",
     "Open Source UI Components",
     "Frontend Design System",

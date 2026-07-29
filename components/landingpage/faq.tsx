@@ -1,97 +1,54 @@
-"use client"
-
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { IconChevronDown } from "@tabler/icons-react"
+import { Button } from "@/components/ui/button"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { HelpCircle } from "lucide-react"
 import { faqData } from "@/contants"
-interface FAQItemProps {
-  question: string;
-  answer: string;
-  isOpen: boolean;
-  onToggle: () => void;
-  index: number;
-}
 
-const FAQItem = ({ question, answer, isOpen, onToggle, index }: FAQItemProps) => {
+export default function FAQ() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="border-b border-white/10"
-    >
-      <motion.button
-        onClick={onToggle}
-        className="w-full py-4 text-left flex items-center justify-between"
-        whileHover={{ opacity: 0.8 }}
-      >
-        <span className="text-white font-medium">{question}</span>
-        <motion.div
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="flex-shrink-0 text-white"
-        >
-          <IconChevronDown size={20} />
-        </motion.div>
-      </motion.button>
+    <div className="min-h-screen border-t border-neutral-200 dark:border-neutral-900 bg-white dark:bg-black">
+      {/* FAQ Button and Header */}
+      <div className="px-4 lg:mx-0 md:mx-auto sm:px-3 md:px-6 lg:px-8 xl:px-12 pt-6 sm:pt-8 md:pt-10">
+        <div className="mb-6 sm:mb-8">
+          <Button variant="outline" size="sm" className="gap-2 bg-transparent">
+            <HelpCircle className="size-4" />
+            FAQ
+          </Button>
+        </div>
 
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="overflow-hidden text-sm text-gray-400 pb-4"
-          >
-            {answer}
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
-  )
-}
-
-export const FAQSection = () => {
-  const [openItems, setOpenItems] = useState<number[]>([])
-  const toggleItem = (index: number) => {
-    setOpenItems((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    )
-  }
-
-  return (
-    <section className="dark:bg-neutral-900/[1.98] bg-white dark:text-white text-black py-20 px-6 sm:px-12">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-        {/* Left Heading */}
-        <div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            Frequently {" "}
-            <span className="font-serif">
-              Asked
-            </span>
-            <br /> Questions
-          </h2>
-          <p>
-
+        <div className="mb-8 sm:mb-10 md:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-neutral-100 mb-3 sm:mb-4 text-balance">
+            Everything You Need to Know
+          </h1>
+          <p className="text-neutral-700 dark:text-neutral-300 text-sm sm:text-base md:text-lg max-w-2xl lg:max-w-3xl leading-relaxed">
+            Looking for quick answers? Check out our{" "}
+            <span className="text-foreground underline cursor-pointer">FAQ section</span>.
           </p>
         </div>
+      </div>
 
-        {/* Right FAQ List */}
-        <div className="space-y-4">
-          {faqData.map((faq, index) => (
-            <FAQItem
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-              isOpen={openItems.includes(index)}
-              onToggle={() => toggleItem(index)}
-              index={index}
-            />
-          ))}
+      <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pb-8 sm:pb-12 md:pb-16">
+        <div className="max-w-4xl mx-auto">
+          {/* FAQ Accordion */}
+          <div className="space-y-3 sm:space-y-4">
+            <Accordion type="single" collapsible className="w-full">
+              {faqData.map((faq, index) => (
+                <AccordionItem
+                  key={index}
+                  value={`item-${index}`}
+                  className="border border-border rounded-lg px-4 sm:px-6 mb-3 sm:mb-4 last:mb-0"
+                >
+                  <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg font-medium hover:no-underline py-4 sm:py-5 md:py-6">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed pb-4 sm:pb-5 md:pb-6 text-sm sm:text-base">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

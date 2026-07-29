@@ -55,6 +55,18 @@ export const introItems = [
   },
 ]
 
+export const footerLinks = {
+  pages: [
+    { name: "All Products", href: "/#products" },
+    { name: "Clients", href: "/#clients" },
+    { name: "Blog", href: "/#blog" },
+  ],
+  register: [
+    { name: "Sign Up", href: "/#signup" },
+    { name: "Login", href: "/#login" },
+  ]
+}
+
 export const primaryItems = [
   { name: 'Gravity Well', href: '/components/GravityWell' },
   { name: 'Split Flap Text', href: '/components/SplitFlapText' },
