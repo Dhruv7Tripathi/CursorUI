@@ -16,10 +16,10 @@ const SignIn = () => {
     <div className="mt-16 mb-16 flex flex-col items-center justify-center bg-white dark:bg-black relative overflow-hidden w-full rounded-sm">
       <div className="relative z-10 w-full max-w-sm rounded-sm bg-gradient-to-r from-neutral-100 to-neutral-200 dark:from-[#ffffff10] dark:to-[#121212] backdrop-blur-sm  shadow-2xl p-8 flex flex-col items-center">
         <h2 className="text-2xl font-semibold text-black dark:text-white mb-6 text-center">
-          LayrdUI Sign In
+          OrbitUI Sign In
         </h2>
         <p className="text-sm text-neutral-800 dark:text-neutral-200">
-          Please sign in to continue and unlock all premium LayrdUI templates.
+          Please sign in to continue and unlock all premium OrbitUI templates.
         </p>
         {/* Form */}
         <div className="flex flex-col w-full gap-4">
