@@ -137,7 +137,7 @@ const HeroSection = () => {
                 initial="hidden"
                 animate="visible"
             >
-                <div className="max-w-7xl mx-auto text-center space-y-4 sm:space-y-5 md:space-y-6 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto text-center space-y-4 sm:space-y-5 md:space-y-6 px-4 sm:px-6 lg:px-20">
                     <B2
                         borderRadius="0.5rem"
                         className="bg-white rounded-lg dark:bg-black text-black dark:text-white border-neutral-200 dark:border-neutral-800"

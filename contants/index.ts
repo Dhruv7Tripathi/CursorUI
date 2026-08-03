@@ -70,7 +70,7 @@ export const footerLinks = {
 export const primaryItems = [
   { name: 'Gravity Well', href: '/components/GravityWell' },
   { name: 'Split Flap Text', href: '/components/SplitFlapText' },
-  { name: 'Stretch Text', href: '/components/StretchText' },
+  { name: 'Stretch Text', href: '/components/StrechText' },
   { name: 'Animated Networks', href: '/components/AnimatedNetworks' },
   { name: 'Retro Shader', href: '/components/RetroShader' },
   { name: 'Fluid Cube Grid', href: '/components/FluidCubeGrid' },

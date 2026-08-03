@@ -172,32 +172,32 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-const products = [
-  {
-    title: "Linear Temp — UI Template",
-    href: "#uitemplate",
-    src: "https://layrdui.in/products/linear.png",
-    description: "A clean, responsive Next.js + Tailwind template designed for fast product launches and consistent UI.",
-  },
-  {
-    title: "Linear Temp — Docs Kit",
-    href: "#docskit",
-    src: "https://layrdui.in/products/polar-auth.png",
-    description: "Documentation and component guidelines for shipping polished docs, changelogs, and marketing pages quickly.",
-  },
-  {
-    title: "Linear Temp — Blog Starter",
-    href: "#blogstarter",
-    src: "https://layrdui.in/products/linear1.png",
-    description: "Content-first blog layout with MDX support, SEO optimizations, and ready-to-use post templates.",
-  },
-  {
-    title: "Linear Temp — Dashboard",
-    href: "#dashboard",
-    src: "https://layrdui.in/products/linear2.png",
-    description: "Admin and analytics dashboard patterns with reusable components for monitoring and insights.",
-  },
-]
+// const products = [
+//   {
+//     title: "Linear Temp — UI Template",
+//     href: "#uitemplate",
+//     src: "https://layrdui.in/products/linear.png",
+//     description: "A clean, responsive Next.js + Tailwind template designed for fast product launches and consistent UI.",
+//   },
+//   {
+//     title: "Linear Temp — Docs Kit",
+//     href: "#docskit",
+//     src: "https://layrdui.in/products/polar-auth.png",
+//     description: "Documentation and component guidelines for shipping polished docs, changelogs, and marketing pages quickly.",
+//   },
+//   {
+//     title: "Linear Temp — Blog Starter",
+//     href: "#blogstarter",
+//     src: "https://layrdui.in/products/linear1.png",
+//     description: "Content-first blog layout with MDX support, SEO optimizations, and ready-to-use post templates.",
+//   },
+//   {
+//     title: "Linear Temp — Dashboard",
+//     href: "#dashboard",
+//     src: "https://layrdui.in/products/linear2.png",
+//     description: "Admin and analytics dashboard patterns with reusable components for monitoring and insights.",
+//   },
+// ]
 
 export const Navbar = () => {
   const [isProductOpen, setIsProductOpen] = useState(false)
@@ -205,43 +205,37 @@ export const Navbar = () => {
   const dropdownRef = useRef<HTMLDivElement | null>(null)
   const buttonRef = useRef<HTMLButtonElement | null>(null)
 
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!isProductOpen) return
+  // useEffect(() => {
+  //   const handleMouseMove = (e: MouseEvent) => {
+  //     if (!isProductOpen) return
 
-      const dropdown = dropdownRef.current
-      const button = buttonRef.current
+  //     const dropdown = dropdownRef.current
+  //     const button = buttonRef.current
 
-      if (!dropdown || !button) return
+  //     if (!dropdown || !button) return
 
-      const { clientX, clientY } = e
-      const dropdownBounds = dropdown.getBoundingClientRect()
-      const buttonBounds = button.getBoundingClientRect()
+  //     const { clientX, clientY } = e
+  //     const dropdownBounds = dropdown.getBoundingClientRect()
+  //     const buttonBounds = button.getBoundingClientRect()
 
-      const bufferZone = 20
+  //     const bufferZone = 20
 
-      const isOverButton =
-        clientX >= buttonBounds.left &&
-        clientX <= buttonBounds.right &&
-        clientY >= buttonBounds.top &&
-        clientY <= buttonBounds.bottom + bufferZone
+  //     const isOverButton =
+  //       clientX >= buttonBounds.left &&
+  //       clientX <= buttonBounds.right &&
+  //       clientY >= buttonBounds.top &&
+  //       clientY <= buttonBounds.bottom + bufferZone
 
-      const isOverDropdown =
-        clientX >= dropdownBounds.left &&
-        clientX <= dropdownBounds.right &&
-        clientY >= dropdownBounds.top - bufferZone &&
-        clientY <= dropdownBounds.bottom
+  //     const isOverDropdown =
+  //       clientX >= dropdownBounds.left &&
+  //       clientX <= dropdownBounds.right &&
+  //       clientY >= dropdownBounds.top - bufferZone &&
+  //       clientY <= dropdownBounds.bottom
 
-      if (!isOverButton && !isOverDropdown) {
-        setIsProductOpen(false)
-      }
-    }
-
-    if (isProductOpen) {
-      window.addEventListener("mousemove", handleMouseMove)
-      return () => window.removeEventListener("mousemove", handleMouseMove)
-    }
-  }, [isProductOpen])
+  //     if (!isOverButton && !isOverDropdown) {
+  //       setIsProductOpen(false)
+  //     }
+  //   }
 
   return (
     <nav
@@ -253,7 +247,7 @@ export const Navbar = () => {
         {/* Left: Logo and Nav */}
         <div className="flex items-center space-x-2 sm:space-x-4">
           <Link href="/" className="flex space-x-1.5 sm:space-x-2 items-center">
-            <Image
+            {/* <Image
               width={500}
               height={500}
               src={"/logo.png"}
@@ -261,57 +255,26 @@ export const Navbar = () => {
               quality={100}
               priority={true}
               className="h-8 w-8 sm:h-9 sm:w-9 dark:invert lg:h-10 lg:w-10 flex-shrink-0 rounded-xl object-cover"
-            />
-            <h3 className="text-base sm:text-lg lg:text-xl font-bold text-black dark:text-white">Linear</h3>
+            /> */}
+            <h3 className="text-base sm:text-lg lg:text-xl font-bold text-black dark:text-white">OrbitUI</h3>
           </Link>
 
           {/* Desktop Navigation - Hidden on mobile and small tablets */}
           <div className="hidden lg:flex px-4 xl:px-8 text-sm font-semibold space-x-4 xl:space-x-6 text-neutral-800 dark:text-neutral-200">
             {/* Products Dropdown */}
-            <div className="relative z-50" onMouseEnter={() => setIsProductOpen(true)}>
-              <button
-                ref={buttonRef}
+            <div className="relative z-50">
+              <Link
+                href="/components"
+
                 className="flex items-center gap-1 font-semibold hover:bg-neutral-100 py-2 px-3 rounded-lg dark:hover:bg-neutral-900 dark:text-neutral-50 text-neutral-950"
               >
-                Products
-                <motion.div animate={{ rotate: isProductOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
+                Components
+                {/* <motion.div animate={{ rotate: isProductOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
                   <ChevronDown className="w-4 h-4" />
-                </motion.div>
-              </button>
+                </motion.div> */}
+              </Link>
 
-              <motion.div
-                ref={dropdownRef}
-                initial={false}
-                animate={isProductOpen ? "open" : "closed"}
-                variants={{
-                  open: { opacity: 1, y: 0, pointerEvents: "auto", display: "block" },
-                  closed: { opacity: 0, y: -10, pointerEvents: "none", transitionEnd: { display: "none" } },
-                }}
-                transition={{ duration: 0.2 }}
-                className="absolute top-full left-0 mt-4 w-[550px] xl:w-[600px] bg-white dark:bg-black text-black dark:text-white z-[100] rounded-xl shadow-xl border border-neutral-300 dark:border-neutral-800"
-              >
-                <div className="grid grid-cols-2 gap-4 xl:gap-6 p-4 xl:p-6">
-                  {products.map((product, idx) => (
-                    <a
-                      key={idx}
-                      href={product.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-900 p-3 rounded-lg transition"
-                    >
-                      <div className="mb-3 overflow-hidden rounded-lg">
-                        <img
-                          src={product.src}
-                          alt={product.title}
-                          className="w-full h-28 xl:h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <div className="font-semibold text-sm xl:text-base mb-1">{product.title}</div>
-                      <div className="text-xs xl:text-sm text-neutral-600 dark:text-neutral-400">{product.description}</div>
-                    </a>
-                  ))}
-                </div>
-              </motion.div>
+
             </div>
 
             <a
@@ -384,20 +347,13 @@ export const Navbar = () => {
               <div className="flex flex-col space-y-4 mt-8">
                 {/* Mobile Products Section */}
                 <div className="space-y-3 ml-1.5 sm:ml-2">
-                  <h3 className="font-semibold  text-base sm:text-lg">Products</h3>
-                  {products.map((product, idx) => (
-                    <a
-                      key={idx}
-                      href={product.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block pl-3 sm:pl-4 space-y-1 hover:bg-neutral-100 dark:hover:bg-neutral-900 p-2 rounded-lg transition"
-                      onClick={() => setIsMobileOpen(false)}
-                    >
-                      <div className="font-medium text-sm sm:text-base">{product.title}</div>
-                      <div className="text-xs sm:text-sm text-muted-foreground">{product.description}</div>
-                    </a>
-                  ))}
+                  <Link
+                    href="/components"
+                    className="flex items-center gap-1 font-semibold hover:bg-neutral-100 py-2 px-3 rounded-lg dark:hover:bg-neutral-900 dark:text-neutral-50 text-neutral-950"
+                  >
+                    Components
+                  </Link>
+
                 </div>
 
                 {/* Mobile Navigation Links */}

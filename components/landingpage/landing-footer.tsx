@@ -128,7 +128,7 @@ export default function Footer() {
             {/* Branding & Description */}
             <div className="flex flex-col space-y-4 lg:max-w-sm">
               <Link href="/" className="flex space-x-2 items-center">
-                <Image
+                {/* <Image
                   width={40}
                   height={40}
                   src={"/logo.png"}
@@ -136,7 +136,7 @@ export default function Footer() {
                   quality={100}
                   priority={true}
                   className="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0 dark:invert rounded-xl object-cover"
-                />
+                /> */}
                 <h3 className="text-lg sm:text-xl font-bold text-black dark:text-white">Orbit UI</h3>
               </Link>
               <p className="text-neutral-600 dark:text-neutral-300 text-sm sm:text-base leading-relaxed">
