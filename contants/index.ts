@@ -7,10 +7,10 @@ export const navItems = [
     name: "Pricing",
     href: "/pricing"
   },
-  {
-    name: "Templates",
-    href: "/templates"
-  }
+  // {
+  //   name: "Templates",
+  //   href: "/templates"
+  // }
 ]
 
 export const faqData = [

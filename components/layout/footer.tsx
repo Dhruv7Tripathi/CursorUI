@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { StackedLayersLogo } from "@/components/icons/logo"
+// import { StackedLayersLogo } from "@/components/icons/logo"
 export const Footer = () => {
   return (
     <footer className="bg-white dark:bg-black">
@@ -13,7 +13,7 @@ export const Footer = () => {
                 href="/"
                 aria-label="home"
                 className=" flex items-center space-x-2">
-                <StackedLayersLogo />
+                {/* <StackedLayersLogo /> */}
                 <span className='text-2xl font-bold'>OrbitUI</span>
               </Link>
               <div className="mr-2 mt-4 max-w-fit">
@@ -54,8 +54,8 @@ export const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/templates" className="text-muted-foreground hover:text-foreground transition-colors">
-                      Templates
+                    <Link href="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+                      Pricing
                     </Link>
                   </li>
                   <li>

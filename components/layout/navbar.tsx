@@ -10,7 +10,7 @@ import DocumentSearch from "./search"
 // import { LayrdUISignInModal } from "../ui/signin-model"
 import { navItems } from "@/contants"
 import { cn } from "@/lib/utils"
-import { StackedLayersLogo } from "@/components/icons/logo"
+// import { StackedLayersLogo } from "@/components/icons/logo"
 import UserAccountNav from "../(auth)/userAccountNav"
 import SignInButton from "../(auth)/SignInButton"
 export default function Navbar() {
@@ -29,7 +29,7 @@ export default function Navbar() {
               href="/"
               aria-label="home"
               className=" flex items-center p-2 m-2 mr-4 space-x-2">
-              <StackedLayersLogo />
+              {/* <StackedLayersLogo /> */}
 
               <span className='text-2xl  space-x-2.5 font-bold'>OrbitUI</span>
             </Link>
