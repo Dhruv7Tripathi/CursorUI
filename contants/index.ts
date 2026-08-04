@@ -46,13 +46,13 @@ export const introItems = [
     href: "/docs/introduction",
   },
   {
-    name: "Install Next.js",
-    href: "/docs/install-nextjs",
+    name: "Installation",
+    href: "/docs/installation",
   },
-  {
-    name: "Install Tailwind CSS",
-    href: "/docs/install-tailwindcss",
-  },
+  // {
+  //   name: "Install Tailwind CSS",
+  //   href: "/docs/install-tailwindcss",
+  // },
 ]
 
 export const footerLinks = {

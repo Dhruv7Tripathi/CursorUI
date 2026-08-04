@@ -67,7 +67,7 @@ export const Footer = () => {
 
                 <ul className="space-y-3 text-sm">
                   <li>
-                    <Link href="/templates" className="text-muted-foreground hover:text-foreground transition-colors">
+                    <Link href="/docs/installation" className="text-muted-foreground hover:text-foreground transition-colors">
                       Getting Started
                     </Link>
                   </li>
