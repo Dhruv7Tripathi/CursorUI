@@ -43,7 +43,7 @@ export const faqData = [
 export const introItems = [
   {
     name: "Introduction",
-    href: "/docs/intro",
+    href: "/docs/introduction",
   },
   {
     name: "Install Next.js",
@@ -71,7 +71,7 @@ export const primaryItems = [
   { name: 'Gravity Well', href: '/components/GravityWell' },
   { name: 'Split Flap Text', href: '/components/SplitFlapText' },
   { name: 'Stretch Text', href: '/components/StrechText' },
-  { name: 'Animated Networks', href: '/components/AnimatedNetworks' },
+  { name: 'Animated Networks', href: '/components/AnimatedNetWorks' },
   { name: 'Retro Shader', href: '/components/RetroShader' },
   { name: 'Fluid Cube Grid', href: '/components/FluidCubeGrid' },
   { name: 'Shatter Glass', href: '/components/ShatterGlass' },
