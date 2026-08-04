@@ -42,13 +42,11 @@ interface Node {
   pulseSpeed?: number;
   pulseTimer?: number;
 }
-
 export function AnimatedNetwork() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number | null>(null);
   const cursorRef = useRef({ x: 0, y: 0, active: false });
-  // Smoothly lagging cursor for the ring effect
   const cursorRingRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -59,10 +57,10 @@ export function AnimatedNetwork() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size
+    // FIX 1: Measure the offset width/height of the parent container, not the window viewport
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = container.clientWidth;
+      canvas.height = container.clientHeight;
     };
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
@@ -87,18 +85,17 @@ export function AnimatedNetwork() {
     canvas.addEventListener('mouseleave', handleMouseLeave);
     canvas.addEventListener('mouseenter', handleMouseEnter);
 
-    // Initialize nodes
+    // Initialize nodes (these now populate within the actual canvas dimensions)
     const nodes: Node[] = [];
-    const totalNodesCount = 60; // Increased count for density
+    const totalNodesCount = 60;
 
-    // First assign specialized tech nodes
     TECH_LIST.forEach((tech) => {
       nodes.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         vx: (Math.random() - 0.5) * 0.4,
         vy: (Math.random() - 0.5) * 0.4,
-        radius: Math.random() * 1.5 + 3, // Larger nodes for label tech
+        radius: Math.random() * 1.5 + 3,
         color: tech.color,
         glowColor: tech.glowColor,
         label: tech.label,
@@ -107,10 +104,8 @@ export function AnimatedNetwork() {
       });
     });
 
-    // Fill the rest with smaller connected filler particles
     const fillerCount = totalNodesCount - TECH_LIST.length;
     for (let i = 0; i < fillerCount; i++) {
-      // Pick random tech config for styling
       const randomTech = TECH_LIST[Math.floor(Math.random() * TECH_LIST.length)];
       nodes.push({
         x: Math.random() * canvas.width,
@@ -123,13 +118,10 @@ export function AnimatedNetwork() {
       });
     }
 
-    // Initialize lag-smoothed cursor ring position
     cursorRingRef.current.x = canvas.width / 2;
     cursorRingRef.current.y = canvas.height / 2;
 
-    // Animation loop
     const animate = () => {
-      // Clear canvas with black at 0.9 opacity to allow trails
       ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -137,13 +129,12 @@ export function AnimatedNetwork() {
       const mouseY = cursorRef.current.y;
       const mouseActive = cursorRef.current.active;
 
-      // Update smoothly lagging cursor ring
       if (mouseActive) {
         cursorRingRef.current.x += (mouseX - cursorRingRef.current.x) * 0.12;
         cursorRingRef.current.y += (mouseY - cursorRingRef.current.y) * 0.12;
       }
 
-      // 1. Draw connection lines between nodes
+      // Draw connection lines between nodes
       ctx.lineWidth = 0.5;
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
@@ -155,8 +146,6 @@ export function AnimatedNetwork() {
 
           if (distance < 140) {
             const alpha = (1 - distance / 140) * 0.15;
-
-            // If one of the connected nodes is hover-active near mouse, highlight the connection!
             let lineAlpha = alpha;
             let strokeColor = 'rgba(148, 163, 184, ';
             if (mouseActive) {
@@ -164,7 +153,6 @@ export function AnimatedNetwork() {
               const dMouse2 = Math.sqrt((mouseX - n2.x) ** 2 + (mouseY - n2.y) ** 2);
 
               if (dMouse1 < 180 || dMouse2 < 180) {
-                // Blend line into the color of active nodes
                 strokeColor = n1.label ? `${n1.color.replace('rgb', 'rgba').replace(')', ', ')}` : 'rgba(59, 130, 246, ';
                 lineAlpha = alpha * 2.2;
               }
@@ -178,7 +166,7 @@ export function AnimatedNetwork() {
         }
       }
 
-      // 2. Draw connections between cursor and nearby nodes
+      // Draw connections between cursor and nearby nodes
       if (mouseActive) {
         nodes.forEach((node) => {
           const dx = mouseX - node.x;
@@ -186,9 +174,8 @@ export function AnimatedNetwork() {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < 220) {
-            // Draw connection line
             const grad = ctx.createLinearGradient(mouseX, mouseY, node.x, node.y);
-            grad.addColorStop(0, 'rgba(59, 130, 246, 0.6)'); // Blue glow at mouse
+            grad.addColorStop(0, 'rgba(59, 130, 246, 0.6)');
             grad.addColorStop(1, node.label ? node.glowColor.replace('0.6', '0.1') : 'rgba(148, 163, 184, 0.05)');
 
             ctx.strokeStyle = grad;
@@ -201,33 +188,27 @@ export function AnimatedNetwork() {
         });
       }
 
-      // 3. Update, draw nodes and technology text labels
+      // Update, draw nodes and labels
       nodes.forEach((node) => {
-        // Physics update
         node.x += node.vx;
         node.y += node.vy;
 
-        // Apply physical cursor pull
         if (mouseActive) {
           const dx = mouseX - node.x;
           const dy = mouseY - node.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < 300) {
-            // Gentler, smooth gravitational attraction (prevent collapsing)
             const force = (300 - distance) / 300;
-            // Higher gravity for named tech nodes for distinct responsiveness
             const strengthFactor = node.label ? 0.07 : 0.05;
             node.vx += (dx / (distance + 1)) * force * strengthFactor;
             node.vy += (dy / (distance + 1)) * force * strengthFactor;
           }
         }
 
-        // Ambient deceleration (friction) to keep speeds in check
         node.vx *= 0.97;
         node.vy *= 0.97;
 
-        // Maintain small background ambient drift velocity
         const speed = Math.sqrt(node.vx * node.vx + node.vy * node.vy);
         const minSpeed = 0.15;
         const maxSpeed = 1.3;
@@ -241,7 +222,7 @@ export function AnimatedNetwork() {
           node.vy = (node.vy / speed) * maxSpeed;
         }
 
-        // Bounce off bounds
+        // Bounce off bounds relative to local canvas size
         const padding = 10;
         if (node.x < padding || node.x > canvas.width - padding) {
           node.vx *= -0.8;
@@ -252,7 +233,6 @@ export function AnimatedNetwork() {
           node.y = Math.max(padding, Math.min(canvas.height - padding, node.y));
         }
 
-        // Draw particle
         let currentRadius = node.radius;
         if (node.pulseTimer !== undefined && node.pulseSpeed !== undefined) {
           node.pulseTimer += node.pulseSpeed;
@@ -260,12 +240,10 @@ export function AnimatedNetwork() {
           currentRadius = node.radius + pulse;
         }
 
-        // Check closeness to cursor
         const dMouse = mouseActive ? Math.sqrt((mouseX - node.x) ** 2 + (mouseY - node.y) ** 2) : 999;
         const isHovered = dMouse < 180;
 
         if (isHovered && mouseActive) {
-          // Increase size and glow intensity on hover
           currentRadius += 1.5;
           ctx.shadowBlur = 12;
           ctx.shadowColor = node.color;
@@ -275,48 +253,42 @@ export function AnimatedNetwork() {
         ctx.beginPath();
         ctx.arc(node.x, node.y, currentRadius, 0, Math.PI * 2);
         ctx.fill();
-        ctx.shadowBlur = 0; // Reset shadow glow
+        ctx.shadowBlur = 0;
 
-        // Draw Technology Label
         if (node.label) {
           const labelAlpha = isHovered && mouseActive ? 0.95 : 0.45;
           const fontSize = isHovered && mouseActive ? '13px' : '11px';
 
-          ctx.fillStyle = `rgba(241, 245, 249, ${labelAlpha})`; // Slate-100
+          ctx.fillStyle = `rgba(241, 245, 249, ${labelAlpha})`;
           ctx.font = `${isHovered && mouseActive ? '600' : '400'} ${fontSize} 'Outfit', 'Inter', sans-serif`;
           ctx.fillText(node.label, node.x + 8, node.y + 4);
         }
       });
 
-      // 4. Draw interactive glowing cursor indicator
+      // Draw interactive glowing cursor indicator
       if (mouseActive) {
-        // Glowing halo
         ctx.fillStyle = 'rgba(59, 130, 246, 0.05)';
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, 40, 0, Math.PI * 2);
         ctx.fill();
 
-        // Cursor core dot
         ctx.fillStyle = '#ffffff';
         ctx.shadowBlur = 10;
-        ctx.shadowColor = '#60a5fa'; // Blue-400
+        ctx.shadowColor = '#60a5fa';
         ctx.beginPath();
         ctx.arc(mouseX, mouseY, 4, 0, Math.PI * 2);
         ctx.fill();
-        ctx.shadowBlur = 0; // Reset
+        ctx.shadowBlur = 0;
 
-        // Lagging outer ring
-        ctx.strokeStyle = 'rgba(96, 165, 250, 0.35)'; // Blue-400
+        ctx.strokeStyle = 'rgba(96, 165, 250, 0.35)';
         ctx.lineWidth = 1.5;
         ctx.beginPath();
         ctx.arc(cursorRingRef.current.x, cursorRingRef.current.y, 16, 0, Math.PI * 2);
         ctx.stroke();
 
-        // Micro tick marks on lagging ring
         ctx.strokeStyle = 'rgba(96, 165, 250, 0.6)';
         ctx.lineWidth = 1;
         ctx.beginPath();
-        // Draw crosshair indicators on the ring
         const rx = cursorRingRef.current.x;
         const ry = cursorRingRef.current.y;
         ctx.moveTo(rx - 20, ry); ctx.lineTo(rx - 16, ry);
@@ -343,7 +315,10 @@ export function AnimatedNetwork() {
   }, []);
 
   return (
-    <div ref={containerRef} className="absolute inset-0 w-full h-full overflow-hidden bg-black pointer-events-none select-none">
+    <div
+      ref={containerRef}
+      className="relative w-full h-[450px] overflow-hidden bg-black pointer-events-none select-none"
+    >
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full block pointer-events-auto"

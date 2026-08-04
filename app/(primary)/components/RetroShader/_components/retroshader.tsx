@@ -36,8 +36,8 @@ export default function RetroShader() {
   }
 
   return (
-    <main className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8">
+    <main className="bg-white dark:bg-black w-full h-full flex items-center justify-center">
+      <div className="w-full h-full flex items-center justify-center p-2 bg-background">
         <ImageCanvas
           ref={canvasRef}
           image={image}
@@ -195,8 +195,10 @@ export const ImageCanvas = forwardRef<HTMLCanvasElement, ImageCanvasProps>(
       canvas.width = displayWidth * dpr
       canvas.height = displayHeight * dpr
       // Set CSS size to display dimensions
-      canvas.style.width = `${displayWidth}px`
-      canvas.style.height = `${displayHeight}px`
+      // Set CSS size to be responsive while capping at maximum display dimensions
+      canvas.style.width = "100%"
+      canvas.style.height = "auto"
+      canvas.style.maxWidth = `${displayWidth}px`
 
       // Scale context to work in display space
       ctx.scale(dpr, dpr)

@@ -42,6 +42,8 @@ export const code = `"use client"
 
 import { useEffect, forwardRef, useImperativeHandle, useRef, useState } from "react"
 import { Card } from "@/components/ui/card"
+// import { smoothNoise } from "@/lib/noise"
+// import { ImageCanvas } from "@/components/image-canvas"
 
 export default function RetroShader() {
   const [image, setImage] = useState<HTMLImageElement | null>(null)
@@ -74,8 +76,8 @@ export default function RetroShader() {
   }
 
   return (
-    <main className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8">
+    <main className="bg-white dark:bg-black w-full h-full flex items-center justify-center">
+      <div className="w-full h-full flex items-center justify-center p-2 bg-background">
         <ImageCanvas
           ref={canvasRef}
           image={image}
@@ -231,11 +233,14 @@ export const ImageCanvas = forwardRef<HTMLCanvasElement, ImageCanvasProps>(
       const displayHeight = image.height * scale
 
       canvas.width = displayWidth * dpr
-        canvas.height = displayHeight * dpr
-        // Set CSS size to display dimensions
-     canvas.style.width = displayWidth + "px"
-canvas.style.height = displayHeight + "px"
+      canvas.height = displayHeight * dpr
+      // Set CSS size to display dimensions
+      // Set CSS size to be responsive while capping at maximum display dimensions
+      canvas.style.width = "100%"
+      canvas.style.height = "auto"
+      canvas.style.maxWidth = \`\${displayWidth}px\`
 
+      // Scale context to work in display space
       ctx.scale(dpr, dpr)
       ctx.imageSmoothingEnabled = false
 
