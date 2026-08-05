@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/landingpage/landing-navbar";
+// import { Navbar } from "@/components/landingpage/landing-navbar";
 import HeroSection from "@/components/landingpage/heroSection";
 import Footer from "@/components/landingpage/landing-footer";
 import FAQ from "@/components/landingpage/faq";
@@ -8,10 +8,11 @@ import BentoSection from "@/components/landingpage/bento-grid";
 export default function HomePage() {
   return (
     <div className="bg-white dark:bg-black text-gray-900 dark:text-gray-100">
-      <Navbar />
+      {/* <Navbar /> */}
+      <HeroSection />
 
       {/* Main Content Container */}
-      <div className={`
+      {/* <div className={`
         relative
         min-h-[calc(100vh-82px)]
         px-4 sm:px-6
@@ -22,41 +23,33 @@ export default function HomePage() {
         lg:border-l lg:border-r lg:border-neutral-200 lg:dark:border-neutral-900
       `}>
 
-        {/* Content Sections */}
         <div className="space-y-12 sm:space-y-16 lg:space-y-20">
 
-          {/* Hero Section */}
           <section className="pt-8 sm:pt-12 lg:pt-16">
-            <HeroSection />
           </section>
 
-          {/* Bento Grid Section */}
           <section>
             <BentoSection />
           </section>
 
-          {/* Pricing Section */}
           <section>
             <Pricing />
           </section>
 
-          {/* Testimonials Section */}
           <section>
             <TestimonialsSection />
           </section>
 
-          {/* FAQ Section */}
           <section>
             <FAQ />
           </section>
 
-          {/* Footer Section */}
           <section className="pb-0">
             <Footer />
           </section>
 
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

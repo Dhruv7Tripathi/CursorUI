@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="bg-white dark:bg-black">
       <div className="border-t ">
-        <div className="mx-auto max-w-8xl ml-12 border-t px-4 py-12 lg:py-16">
+        <div className="mx-auto max-w-8xl ml-12 px-4 py-12 lg:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16">
             <div className="lg:col-span-1">
               <Link

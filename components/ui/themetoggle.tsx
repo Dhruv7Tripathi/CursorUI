@@ -11,12 +11,12 @@ export function Themetoggle() {
   return (
     <button
       className={cn(
-        "flex h-10 w-10  items-center text-xl justify-center rounded-xl bg-transparent text-black hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-900",
+        "flex  items-center text-lg justify-center  text-black  dark:text-white ",
       )}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
-      <RxMoon size={30} className="hidden h-[20px] w-[20px] dark:block" />
-      <RxSun size={30} className="block h-[20px] w-[20px] dark:hidden" />
+      <RxMoon size={20} className="hidden h-[20px] w-[20px] dark:block" />
+      <RxSun size={20} className="block h-[20px] w-[20px] dark:hidden" />
     </button>
   );
 }
