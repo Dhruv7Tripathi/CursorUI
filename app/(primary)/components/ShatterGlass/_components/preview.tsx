@@ -10,22 +10,19 @@ import {
   commandMap,
   utilcode,
   packagesMap,
-  animatedFormProps,
 } from "./show-code";
 import ToggleButtonGroup from "@/components/content/togglebuttongroup";
 import MainTitle from "@/components/content/maintitle";
 import PreviewComponentContainer from "@/components/content/previewcomponentcontainer";
 import MainContentContainer from "@/components/content/maincontentcontainer";
 import ComponentNavigation from "@/components/layout/componentnavigation";
-import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import { ComponentSource } from "@/components/code/componentsource";
 import { CommandBlock } from "@/components/code/command-block";
 import ToggleManualCli from "@/components/content/togglemanualcli";
 import { CodeBlock } from "@/components/code/CodeBlock";
-// import PropsTable from "@/components/content/props-table";
-import ShatterGlass from "./shatterglass";
+import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import LivePreviewComponent from "@/components/layout/livepreview";
-
+import ShatterGlass from "./shatterglass";
 const ShatterGlassPreview = () => {
   const [sourceCode, setSourceCode] = useState(false);
   const [sourceManual, setSourceManual] = useState(false);
@@ -41,20 +38,20 @@ const ShatterGlassPreview = () => {
       />
       {!sourceCode ? (
         <PreviewComponentContainer>
-  <div className="relative w-full h-[600px] overflow-hidden rounded-xl border border-zinc-800 bg-[#0a0a0f]">
-    <ShatterGlass
-      height={600}
-      color="ice"
-      className="w-full h-full"
-    />
+          <div className="relative w-full h-[600px] overflow-hidden rounded-xl border border-zinc-800 bg-[#0a0a0f]">
+            <ShatterGlass
+              height={600}
+              color="ice"
+              className="w-full h-full"
+            />
 
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-      <h1 className="text-white text-7xl font-bold tracking-tight">
-        Break things.
-      </h1>
-    </div>
-  </div>
-</PreviewComponentContainer>
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <h1 className="text-white text-7xl font-bold tracking-tight">
+                Break things.
+              </h1>
+            </div>
+          </div>
+        </PreviewComponentContainer>
       ) : (
         <CodeBlock
           fileName={`${title.replace(/\s+/g, "")}Example.tsx`}
@@ -109,19 +106,7 @@ export default ShatterGlassPreview;
 export const LivePreviewShatterGlass = () => {
   return (
     <LivePreviewComponent>
-  <div className="relative w-full h-[600px] overflow-hidden rounded-xl border border-zinc-800 bg-[#0a0a0f]">
-    <ShatterGlass
-      height={600}
-      color="ice"
-      className="w-full h-full"
-    />
-
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-      <h1 className="text-white text-7xl font-bold tracking-tight">
-        Break things.
-      </h1>
-    </div>
-  </div>
-</LivePreviewComponent>
+      <ShatterGlass />
+    </LivePreviewComponent>
   );
 };

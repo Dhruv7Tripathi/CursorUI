@@ -10,21 +10,19 @@ import {
   commandMap,
   utilcode,
   packagesMap,
-  animatedFormProps,
 } from "./show-code";
 import ToggleButtonGroup from "@/components/content/togglebuttongroup";
 import MainTitle from "@/components/content/maintitle";
 import PreviewComponentContainer from "@/components/content/previewcomponentcontainer";
 import MainContentContainer from "@/components/content/maincontentcontainer";
 import ComponentNavigation from "@/components/layout/componentnavigation";
-import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import { ComponentSource } from "@/components/code/componentsource";
 import { CommandBlock } from "@/components/code/command-block";
 import ToggleManualCli from "@/components/content/togglemanualcli";
 import { CodeBlock } from "@/components/code/CodeBlock";
-import FluidCubeGrid from "./fluidcubegrid";
+import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import LivePreviewComponent from "@/components/layout/livepreview";
-
+import FluidCubeGrid from "./fluidcubegrid";
 const FluidCubeGridPreview = () => {
   const [sourceCode, setSourceCode] = useState(false);
   const [sourceManual, setSourceManual] = useState(false);

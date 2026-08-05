@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Dependencies from "@/components/content/dependencies";
 import {
@@ -17,54 +16,48 @@ import MainTitle from "@/components/content/maintitle";
 import PreviewComponentContainer from "@/components/content/previewcomponentcontainer";
 import MainContentContainer from "@/components/content/maincontentcontainer";
 import ComponentNavigation from "@/components/layout/componentnavigation";
-import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import { ComponentSource } from "@/components/code/componentsource";
 import { CommandBlock } from "@/components/code/command-block";
 import ToggleManualCli from "@/components/content/togglemanualcli";
 import { CodeBlock } from "@/components/code/CodeBlock";
-import CursorPredator from "./cursorpredator";
+import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import LivePreviewComponent from "@/components/layout/livepreview";
-
+import CursorPredator from "./cursorpredator";
 const CursorPredatorPreview = () => {
   const [sourceCode, setSourceCode] = useState(false);
   const [sourceManual, setSourceManual] = useState(false);
-
   const { previous, next } = getNavigationFeaturedItems(title);
 
   return (
     <MainContentContainer>
       <MainTitle title={title} description={description} />
-
       <ToggleButtonGroup
         sourceCode={sourceCode}
         setSourceCode={setSourceCode}
         routepoint={routepoint}
       />
-
       {!sourceCode ? (
         <PreviewComponentContainer>
-  <div className="relative h-[650px] w-full overflow-hidden rounded-xl">
-    <CursorPredator />
+          <div className="relative h-[650px] w-full overflow-hidden rounded-xl">
+            <CursorPredator />
 
-    <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-      <h1 className="text-7xl font-bold text-white">
-        Cursor Predator
-      </h1>
-    </div>
-  </div>
-</PreviewComponentContainer>
+            <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+              <h1 className="text-7xl font-bold text-white">
+                Cursor Predator
+              </h1>
+            </div>
+          </div>
+        </PreviewComponentContainer>
       ) : (
         <CodeBlock
           fileName={`${title.replace(/\s+/g, "")}Example.tsx`}
           code={democode}
         />
       )}
-
       <ToggleManualCli
         sourceManual={sourceManual}
         setSourceManual={setSourceManual}
       />
-
       {!sourceManual ? (
         <CommandBlock
           npmCommand={commandMap.npm}
@@ -82,11 +75,9 @@ const CursorPredatorPreview = () => {
               bunCommand={packagesMap.bun}
             />
           </Dependencies>
-
           <Dependencies step={2} title="Add util file">
-            <CodeBlock fileName="lib/util.ts" code={utilcode} />
+            <CodeBlock fileName={`lib/util.ts`} code={utilcode} />
           </Dependencies>
-
           <Dependencies
             step={3}
             title="Copy and paste the following code into your project"
@@ -95,14 +86,12 @@ const CursorPredatorPreview = () => {
               <CodeBlock fileName={`${routepoint}.tsx`} code={code} />
             </ComponentSource>
           </Dependencies>
-
           <Dependencies
             step={4}
             title="Update the import paths to match your project setup"
-          />
+          ></Dependencies>
         </>
       )}
-
       <ComponentNavigation previous={previous} next={next} />
     </MainContentContainer>
   );
@@ -113,14 +102,7 @@ export default CursorPredatorPreview;
 export const LivePreviewCursorPredator = () => {
   return (
     <LivePreviewComponent>
-      <div className="relative h-[700px] w-full overflow-hidden rounded-xl bg-[#050816]">
-        <CursorPredator />
-        <div className="pointer-events-none relative z-10 flex h-full items-center justify-center">
-          <h1 className="text-7xl font-bold text-white">
-            Cursor Predator
-          </h1>
-        </div>
-      </div>
+      <CursorPredator />
     </LivePreviewComponent>
   );
 };

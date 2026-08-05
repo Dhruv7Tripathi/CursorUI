@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Dependencies from "@/components/content/dependencies";
 import {
   code,
@@ -10,28 +10,24 @@ import {
   commandMap,
   utilcode,
   packagesMap,
-  animatedFormProps,
 } from "./show-code";
 import ToggleButtonGroup from "@/components/content/togglebuttongroup";
 import MainTitle from "@/components/content/maintitle";
 import PreviewComponentContainer from "@/components/content/previewcomponentcontainer";
 import MainContentContainer from "@/components/content/maincontentcontainer";
 import ComponentNavigation from "@/components/layout/componentnavigation";
-import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import { ComponentSource } from "@/components/code/componentsource";
 import { CommandBlock } from "@/components/code/command-block";
 import ToggleManualCli from "@/components/content/togglemanualcli";
 import { CodeBlock } from "@/components/code/CodeBlock";
-// import PropsTable from "@/components/content/props-table";
-import VerletRope from "./verletrope";
+import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import LivePreviewComponent from "@/components/layout/livepreview";
-
+import VerletRope from "./verletrope";
 const VerletRopePreview = () => {
   const [sourceCode, setSourceCode] = useState(false);
   const [sourceManual, setSourceManual] = useState(false);
   const { previous, next } = getNavigationFeaturedItems(title);
-const [wind, setWind] = useState(0);
-
+  const [wind, setWind] = useState(0);
   return (
     <MainContentContainer>
       <MainTitle title={title} description={description} />
@@ -42,22 +38,22 @@ const [wind, setWind] = useState(0);
       />
       {!sourceCode ? (
         <PreviewComponentContainer>
-  <div className="relative flex h-[450px] w-full flex-col items-center justify-center rounded-xl border border-zinc-800 bg-zinc-950 px-8">
-    <VerletRope
-      height={320}
-      windTrigger={wind}
-      color="#6366f1"
-      className="w-full"
-    />
+          <div className="relative flex h-[450px] w-full flex-col items-center justify-center rounded-xl border border-zinc-800 bg-zinc-950 px-8">
+            <VerletRope
+              height={320}
+              windTrigger={wind}
+              color="#6366f1"
+              className="w-full"
+            />
 
-    <button
-      onClick={() => setWind((w) => w + 1)}
-      className="mt-8 rounded-full bg-indigo-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-indigo-600"
-    >
-      Gust ↗
-    </button>
-  </div>
-</PreviewComponentContainer>
+            <button
+              onClick={() => setWind((w) => w + 1)}
+              className="mt-8 rounded-full bg-indigo-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-indigo-600"
+            >
+              Gust ↗
+            </button>
+          </div>
+        </PreviewComponentContainer>
       ) : (
         <CodeBlock
           fileName={`${title.replace(/\s+/g, "")}Example.tsx`}
@@ -110,13 +106,10 @@ const [wind, setWind] = useState(0);
 export default VerletRopePreview;
 
 export const LivePreviewVerletRope = () => {
-  const [wind, setWind] = useState(0);
-
   return (
     <LivePreviewComponent>
-  
-      <VerletRope windTrigger={wind} color="#6366f1" />
-      <button onClick={() => setWind(w => w + 1)}>Gust ↗</button>
-</LivePreviewComponent>
+      <VerletRope />
+
+    </LivePreviewComponent>
   );
 };
