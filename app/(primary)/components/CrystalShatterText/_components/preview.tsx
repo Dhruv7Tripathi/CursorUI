@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Dependencies from "@/components/content/dependencies";
 import {
@@ -17,30 +16,39 @@ import MainTitle from "@/components/content/maintitle";
 import PreviewComponentContainer from "@/components/content/previewcomponentcontainer";
 import MainContentContainer from "@/components/content/maincontentcontainer";
 import ComponentNavigation from "@/components/layout/componentnavigation";
-import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import { ComponentSource } from "@/components/code/componentsource";
 import { CommandBlock } from "@/components/code/command-block";
 import ToggleManualCli from "@/components/content/togglemanualcli";
 import { CodeBlock } from "@/components/code/CodeBlock";
-import CrystalShatterText from "./crystalshattertext";
+// import CrystalShatterText from "./crystalshattertext";
+import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import LivePreviewComponent from "@/components/layout/livepreview";
+import dynamic from "next/dynamic";
 
+const CrystalShatterText = dynamic(
+  () => import("./crystalshattertext"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="text-8xl font-black tracking-wider text-white">
+        Lucifer in Hell
+      </div>
+    ),
+  }
+);
 const CrystalShatterTextPreview = () => {
   const [sourceCode, setSourceCode] = useState(false);
   const [sourceManual, setSourceManual] = useState(false);
-
   const { previous, next } = getNavigationFeaturedItems(title);
 
   return (
     <MainContentContainer>
       <MainTitle title={title} description={description} />
-
       <ToggleButtonGroup
         sourceCode={sourceCode}
         setSourceCode={setSourceCode}
         routepoint={routepoint}
       />
-
       {!sourceCode ? (
         <PreviewComponentContainer>
           <div className="flex h-125 w-full items-center justify-center rounded-xl border border-zinc-800 bg-black">
@@ -56,12 +64,10 @@ const CrystalShatterTextPreview = () => {
           code={democode}
         />
       )}
-
       <ToggleManualCli
         sourceManual={sourceManual}
         setSourceManual={setSourceManual}
       />
-
       {!sourceManual ? (
         <CommandBlock
           npmCommand={commandMap.npm}
@@ -79,11 +85,9 @@ const CrystalShatterTextPreview = () => {
               bunCommand={packagesMap.bun}
             />
           </Dependencies>
-
           <Dependencies step={2} title="Add util file">
-            <CodeBlock fileName="lib/util.ts" code={utilcode} />
+            <CodeBlock fileName={`lib/util.ts`} code={utilcode} />
           </Dependencies>
-
           <Dependencies
             step={3}
             title="Copy and paste the following code into your project"
@@ -92,14 +96,12 @@ const CrystalShatterTextPreview = () => {
               <CodeBlock fileName={`${routepoint}.tsx`} code={code} />
             </ComponentSource>
           </Dependencies>
-
           <Dependencies
             step={4}
             title="Update the import paths to match your project setup"
-          />
+          ></Dependencies>
         </>
       )}
-
       <ComponentNavigation previous={previous} next={next} />
     </MainContentContainer>
   );

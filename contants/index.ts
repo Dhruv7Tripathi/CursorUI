@@ -23,7 +23,7 @@ export const faqData = [
     answer: "You can contact support via our support page or by emailing support@example.com.",
   },
   {
-    question: "How do I find the best templates?",
+    question: "fuck off",
     answer: "We use smart filtering and user reviews to show you top-rated templates.",
   },
   {

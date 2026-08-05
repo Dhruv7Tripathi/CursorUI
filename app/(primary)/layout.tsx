@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <section>
+    <section suppressContentEditableWarning={true}>
       <Navbar />
       <div className="items-start dark:bg-black bg-white  gap-3 px-2 md:px-6 lg:flex lg:pr-0 lg:pl-8">
         <aside className="top-14 hidden h-[calc(100vh-3.5rem)] shrink-0 border-r border-neutral-200/60 pb-3 lg:sticky lg:block lg:w-60 lg:overflow-hidden dark:border-neutral-800/60">
