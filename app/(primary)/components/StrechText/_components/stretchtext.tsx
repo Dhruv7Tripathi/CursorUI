@@ -85,7 +85,7 @@ export default function StretchContact() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center dark:bg-black bg-white text-black dark:text-white p-8 overflow-hidden select-none">
+    <main className="flex  flex-col items-center justify-center dark:bg-black bg-white text-black dark:text-white p-8 overflow-hidden select-none">
       <div className="flex flex-col items-center justify-center py-20 cursor-default">
         {/* Subtitle */}
         <span className="text-xs md:text-sm tracking-[0.3em] text-neutral-500 font-sans uppercase mb-6 transition-colors duration-300">
