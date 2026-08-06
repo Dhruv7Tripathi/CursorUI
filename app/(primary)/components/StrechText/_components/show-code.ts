@@ -117,7 +117,7 @@ export default function StretchContact() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white p-8 overflow-hidden select-none">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-black text-black dark:text-white p-8 overflow-hidden select-none">
       <div className="flex flex-col items-center justify-center py-20 cursor-default">
         <span className="mb-6 text-xs md:text-sm tracking-[0.3em] text-neutral-500 uppercase">
           Contact us and let's bring your vision to life
@@ -130,7 +130,7 @@ export default function StretchContact() {
             onMouseLeave={handleMouseLeave}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleMouseLeave}
-            className={\`\${bebasNeue.className} text-[15vw] leading-none flex text-white\`}
+            className={\`\${bebasNeue.className} text-[15vw] leading-none flex text-black dark:text-white\`}
           >
             {word.split("").map((char, index) => (
               <span

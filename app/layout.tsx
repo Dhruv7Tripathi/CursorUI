@@ -17,13 +17,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.orbitui.in"),
   title: {
-    default: "orbitui - Beautiful UI Templates & Components",
-    template: "%s | orbitui",
+    default: "OrbitUI - Beautiful UI Templates & Components",
+    template: "%s | OrbitUI",
   },
   description:
-    "orbitui offers beautiful, responsive UI templates and components built with React, TypeScript, and Tailwind CSS — helping developers ship faster with production-ready blocks.",
+    "OrbitUI offers beautiful, responsive UI templates and components built with React, TypeScript, and Tailwind CSS — helping developers ship faster with production-ready blocks.",
   keywords: [
-    "orbitui",
+    "OrbitUI",
     "UI components",
     "Next.js templates",
     "React components",
@@ -33,19 +33,19 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Dhruv Tripathi" }],
   creator: "Dhruv Tripathi",
-  publisher: "orbitui",
+  publisher: "OrbitUI",
   openGraph: {
-    title: "orbitui - Beautiful UI Templates & Components",
+    title: "OrbitUI - Beautiful UI Templates & Components",
     description:
-      "Build stunning web interfaces faster with orbitui — responsive templates and reusable UI blocks for modern web apps.",
+      "Build stunning web interfaces faster with OrbitUI — responsive templates and reusable UI blocks for modern web apps.",
     url: "https://www.orbitui.in",
-    siteName: "orbitui",
+    siteName: "OrbitUI",
     images: [
       {
         url: "https://www.orbitui.in/og-image.png",
         width: 1200,
         height: 630,
-        alt: "orbitui - Beautiful UI Templates & Components",
+        alt: "OrbitUI - Beautiful UI Templates & Components",
       },
     ],
     locale: "en_US",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "orbitui - Beautiful UI Templates & Components",
+    title: "OrbitUI - Beautiful UI Templates & Components",
     description:
       "Beautiful, responsive UI templates built with React, TypeScript, and Tailwind CSS.",
     images: ["https://www.orbitui.in/og-image.png"],

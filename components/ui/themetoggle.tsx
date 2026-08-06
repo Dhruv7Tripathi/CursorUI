@@ -11,7 +11,7 @@ export function Themetoggle() {
   return (
     <button
       className={cn(
-        "flex  items-center text-lg justify-center  text-black  dark:text-white ",
+        "flex text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand  items-center text-lg justify-center ",
       )}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
