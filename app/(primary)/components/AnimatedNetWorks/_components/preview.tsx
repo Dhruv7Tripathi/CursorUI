@@ -53,6 +53,7 @@ const AnimatedNetworkPreview = () => {
         sourceManual={sourceManual}
         setSourceManual={setSourceManual}
       />
+      {/*
       {!sourceManual ? (
         <CommandBlock
           npmCommand={commandMap.npm}
@@ -60,33 +61,33 @@ const AnimatedNetworkPreview = () => {
           yarnCommand={commandMap.yarn}
           bunCommand={commandMap.bun}
         />
-      ) : (
-        <>
-          <Dependencies step={1} title="Install the packages">
-            <CommandBlock
-              npmCommand={packagesMap.npm}
-              pnpmCommand={packagesMap.pnpm}
-              yarnCommand={packagesMap.yarn}
-              bunCommand={packagesMap.bun}
-            />
-          </Dependencies>
-          <Dependencies step={2} title="Add util file">
-            <CodeBlock fileName={`lib/util.ts`} code={utilcode} />
-          </Dependencies>
-          <Dependencies
-            step={3}
-            title="Copy and paste the following code into your project"
-          >
-            <ComponentSource>
-              <CodeBlock fileName={`${routepoint}.tsx`} code={code} />
-            </ComponentSource>
-          </Dependencies>
-          <Dependencies
-            step={4}
-            title="Update the import paths to match your project setup"
-          ></Dependencies>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Dependencies step={1} title="Install the packages">
+          <CommandBlock
+            npmCommand={packagesMap.npm}
+            pnpmCommand={packagesMap.pnpm}
+            yarnCommand={packagesMap.yarn}
+            bunCommand={packagesMap.bun}
+          />
+        </Dependencies>
+        <Dependencies step={2} title="Add util file">
+          <CodeBlock fileName={`lib/util.ts`} code={utilcode} />
+        </Dependencies>
+        <Dependencies
+          step={3}
+          title="Copy and paste the following code into your project"
+        >
+          <ComponentSource>
+            <CodeBlock fileName={`${routepoint}.tsx`} code={code} />
+          </ComponentSource>
+        </Dependencies>
+        <Dependencies
+          step={4}
+          title="Update the import paths to match your project setup"
+        ></Dependencies>
+      </>
+      {/* )} */}
       <ComponentNavigation previous={previous} next={next} />
     </MainContentContainer>
   );
