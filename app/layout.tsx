@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Provider from "@/components/providers/provider";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,59 +16,89 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.orbitui.in"),
+  metadataBase: new URL("https://orbitxui.vercel.app"),
+
   title: {
-    default: "OrbitUI - Beautiful UI Templates & Components",
-    template: "%s | OrbitUI",
+    default: "OrbitXUI — Modern React UI Components",
+    template: "%s | OrbitXUI",
   },
+
   description:
-    "OrbitUI offers beautiful, responsive UI templates and components built with React, TypeScript, and Tailwind CSS — helping developers ship faster with production-ready blocks.",
+    "OrbitXUI is an open-source UI component library for React and Next.js, built with TypeScript and Tailwind CSS. Build beautiful, accessible, and customizable interfaces faster.",
+
   keywords: [
-    "OrbitUI",
+    "OrbitXUI",
     "UI components",
-    "Next.js templates",
-    "React components",
-    "Tailwind CSS",
-    "TypeScript UI",
-    "frontend design system",
+    "React UI components",
+    "React component library",
+    "Next.js components",
+    "Tailwind CSS components",
+    "TypeScript components",
+    "open source UI library",
+    "frontend UI library",
+    "React component library",
+    "Tailwind UI",
+    "accessible components",
+    "copy paste components",
   ],
-  authors: [{ name: "Dhruv Tripathi" }],
+
+  authors: [
+    {
+      name: "Dhruv Tripathi",
+    },
+  ],
+
   creator: "Dhruv Tripathi",
-  publisher: "OrbitUI",
+  publisher: "OrbitXUI",
+
+  applicationName: "OrbitXUI",
+
+  category: "technology",
+
   openGraph: {
-    title: "OrbitUI - Beautiful UI Templates & Components",
+    title: "OrbitXUI — Modern React UI Components",
     description:
-      "Build stunning web interfaces faster with OrbitUI — responsive templates and reusable UI blocks for modern web apps.",
-    url: "https://www.orbitui.in",
-    siteName: "OrbitUI",
+      "An open-source UI component library for React and Next.js. Build beautiful, accessible, and customizable interfaces with TypeScript and Tailwind CSS.",
+
+    url: "https://orbitxui.vercel.app",
+
+    siteName: "OrbitXUI",
+
     images: [
       {
-        url: "https://www.orbitui.in/og-image.png",
+        url: "https://orbitxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "OrbitUI - Beautiful UI Templates & Components",
+        alt: "OrbitXUI — Modern React UI Components",
       },
     ],
+
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "OrbitUI - Beautiful UI Templates & Components",
+
+    title: "OrbitXUI — Modern React UI Components",
+
     description:
-      "Beautiful, responsive UI templates built with React, TypeScript, and Tailwind CSS.",
-    images: ["https://www.orbitui.in/og-image.png"],
-    creator: "@dhruvtripathi",
+      "Open-source React UI components built with TypeScript and Tailwind CSS. Build beautiful interfaces faster.",
+
+    images: ["https://orbitxui.vercel.app/og-image.png"],
   },
+
   icons: {
     icon: "/favicon.ico",
   },
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
-    canonical: "https://www.orbitui.in",
+    canonical: "https://orbitxui.vercel.app",
   },
 };
 
