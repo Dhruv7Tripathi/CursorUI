@@ -16,7 +16,7 @@ const StretchContactPreview = () => {
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
             <Code2 className="size-3.5" />
-            <span className="font-mono text-[10px] uppercase tracking-wider">preview</span>
+            <span className="font-mono text-[10px] uppercase tracking-wider">preview/stretchcontact</span>
           </div>
         </div>
 

@@ -3,12 +3,12 @@ import PreviewComponentContainer from "@/components/content/previewcomponentcont
 import MainContentContainer from "@/components/content/maincontentcontainer";
 
 import LivePreviewComponent from "@/components/layout/livepreview";
-import { SplitFlapText } from "@/app/(primary)/components/SplitFlapText/_components/splittext";
 import { Code2 } from "lucide-react";
-const SplitFlapTextPreview = () => {
+import { AnimatedNetwork } from "@/app/(primary)/components/AnimatedNetWorks/_components/animatedNetworks";
+const AnimatedNetworkPreview = () => {
   return (
     <MainContentContainer>
-      <div id="components" className="orbit-preview relative mx-auto mt-16 w-full max-w-5xl overflow-hidden rounded-2xl border border-border/80 bg-card/80 text-left shadow-2xl shadow-background/80 sm:mt-20 lg:mt-24">
+      <div id="components" className="orbit-preview relative mx-auto mt-16 w-full max-w-5xl overflow-hidden rounded-2xl border border-border/80 bg-white dark:bg-black text-left shadow-2xl shadow-background/80 sm:mt-20 lg:mt-24">
         <div className="flex items-center justify-between border-b border-border/80 px-4 py-3 sm:px-6">
           <div className="flex items-center gap-2">
             <span className="size-2 rounded-full bg-brand" />
@@ -16,15 +16,16 @@ const SplitFlapTextPreview = () => {
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
             <Code2 className="size-3.5" />
-            <span className="font-mono text-[10px] uppercase tracking-wider">preview/SplitFlapText</span>
+            <span className="font-mono text-[10px] uppercase tracking-wider">preview/AnimatedNetworks</span>
           </div>
         </div>
 
         <div className="bg-white dark:bg-black">
 
           <PreviewComponentContainer>
-
-            <SplitFlapText text="Dhruv" speed={80} />
+            <div className="flex h-125 w-full items-center justify-center rounded-xl border border-zinc-800 bg-black">
+              <AnimatedNetwork />
+            </div>
           </PreviewComponentContainer>
         </div>
       </div>
@@ -35,12 +36,13 @@ const SplitFlapTextPreview = () => {
   );
 };
 
-export default SplitFlapTextPreview;
+export default AnimatedNetworkPreview;
 
-export const LivePreviewSplitFlapText = () => {
+export const LivePreviewAnimatedNetwork = () => {
   return (
     <LivePreviewComponent>
-      <SplitFlapText text="Dhruv" speed={80} />
+      <AnimatedNetwork />
+
     </LivePreviewComponent>
   );
 };
