@@ -31,9 +31,9 @@ export default function Navbar() {
               className=" flex items-center p-2 m-2 mr-4 space-x-2">
               {/* <StackedLayersLogo /> */}
 
-              <span className='text-2xl  space-x-2.5 font-bold'>OrbitUI</span>
+              <span className='text-2xl  space-x-2.5 font-bold'>OrbitXUI</span>
             </Link>
-
+            {/* 
             <div
 
               className="hidden md:flex space-x-6"
@@ -48,7 +48,7 @@ export default function Navbar() {
                   </Link>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           <div
@@ -67,7 +67,7 @@ export default function Navbar() {
                   )}
                 </div>
               </div>
-              <Themetoggle />
+              {/* <Themetoggle /> */}
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
                 transition={{ duration: 0.3, delay: 0.1 }}
                 className="px-2 py-4 space-y-2"
               >
-                {navItems.map((item) => (
+                {/* {navItems.map((item) => (
                   <div key={item.href}>
                     <Link
                       href={item.href}
@@ -106,7 +106,7 @@ export default function Navbar() {
                       {item.name}
                     </Link>
                   </div>
-                ))}
+                ))} */}
                 <div
                   className="pt-4 border-t space-y-2"
                 >
@@ -124,7 +124,7 @@ export default function Navbar() {
                     ) : (
                       <SignInButton text="Get All Access" />
                     )}
-                    <Themetoggle />
+                    {/* <Themetoggle /> */}
 
                   </div>
                 </div>

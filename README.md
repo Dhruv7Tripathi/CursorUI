@@ -1,14 +1,14 @@
 # OrbitXUI
 
-### Modern, accessible, and customizable UI components for React.
+### Interactive UI components for modern web experiences.
 
 [![Website](https://img.shields.io/badge/Website-orbitxui.vercel.app-black?style=flat-square)](https://orbitxui.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-black?style=flat-square&logo=github)](https://github.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-black?style=flat-square&logo=github)](https://github.com/Dhruv7Tripathi/OrbitXUI)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-**OrbitXUI** is an open-source UI component library built for developers who want to create beautiful, modern, and production-ready React interfaces without building every component from scratch.
+**OrbitXUI** is an open-source collection of interactive and experimental UI components for React. Built for developers who want to add motion, depth, and personality to modern web experiences without building complex interactions from scratch.
 
-> Build faster. Customize everything. Ship beautiful interfaces.
+> **Build faster. Add motion. Create experiences that stand out.**
 
 [**Explore OrbitXUI →**](https://orbitxui.vercel.app)
 
@@ -16,104 +16,86 @@
 
 ## ✨ Why OrbitXUI?
 
-Building a polished interface shouldn't mean reinventing the same components again and again.
+Modern interfaces shouldn't have to feel static.
 
-OrbitXUI provides a collection of reusable components designed with:
+OrbitXUI focuses on interactive components that bring movement and visual depth to your applications while remaining customizable and developer-friendly.
 
-- 🎨 **Modern UI** — Clean, polished components for modern applications.
-- ⚡ **Developer Friendly** — Simple APIs and copy-paste friendly components.
-- 🧩 **Composable** — Build complex interfaces by combining smaller components.
-- 🎯 **Customizable** — Easily adapt components to your application's design.
+- 🎨 **Modern & Experimental** — Unique components designed for standout interfaces.
+- ⚡ **Interactive** — Built around motion, interaction, and visual feedback.
+- 🧩 **Composable** — Use components individually or combine them into larger experiences.
+- 🎯 **Customizable** — Adapt components to match your product and design system.
+- 🚀 **Performance Focused** — Built with modern React patterns.
 - 🌙 **Dark Mode Ready** — Designed to work beautifully across themes.
-- ♿ **Accessibility Focused** — Built with accessibility in mind.
 - 📦 **Open Source** — Free to use, modify, and contribute to.
-
----
-
-## 🚀 Getting Started
-
-Visit the documentation to explore all available components:
-
-**https://orbitxui.vercel.app**
-
-Choose a component, customize it, copy the code, and use it in your project.
-
-### Example
-
-```tsx
-import { Button } from "@/components/ui/button";
-
-export default function Example() {
-  return <Button>Get Started</Button>;
-}
-```
 
 ---
 
 ## 🧩 Components
 
-OrbitXUI is continuously growing.
+OrbitXUI currently includes a collection of interactive and experimental components.
 
-The library is focused on providing reusable components for:
+### 🌌 Interactive & Visual
 
-### Core Components
+| Component             | Description                                                |
+| --------------------- | ---------------------------------------------------------- |
+| **Gravity Well**      | An interactive gravity-inspired visual effect.             |
+| **Animated Networks** | Dynamic animated network visualization.                    |
+| **Fluid Cube Grid**   | An interactive fluid cube-based grid effect.               |
+| **Shatter Glass**     | A glass-shattering interactive visual effect.              |
+| **Verlet Rope**       | Physics-inspired rope simulation using Verlet integration. |
+| **Retro Shader**      | A retro-inspired shader effect for immersive interfaces.   |
+| **Cursor Predator**   | An interactive cursor-following visual experience.         |
 
-- Button
-- Input
-- Textarea
-- Select
-- Checkbox
-- Radio
-- Switch
-- Badge
-- Avatar
-- Card
-- Dialog
-- Dropdown
-- Tabs
-- Tooltip
-- Accordion
-- Alert
-- Progress
-- Skeleton
+### ✨ Text & Typography
 
-### Advanced Components
-
-- Command Menu
-- Navigation
-- Data Tables
-- Pagination
-- Toasts
-- Forms
-- Menus
-- Popovers
-- Tooltips
-- Modals
+| Component                | Description                                           |
+| ------------------------ | ----------------------------------------------------- |
+| **Split Flap Text**      | Animated split-flap style text transitions.           |
+| **Stretch Text**         | Interactive text stretching and deformation effects.  |
+| **Crystal Shatter Text** | A text effect with crystal-like shattering animation. |
 
 ### More coming soon...
 
-We're continuously adding new components and improving existing ones.
+OrbitXUI is actively evolving. New interactive components and experiments are added regularly.
 
 ---
 
-## 🎨 Customization
+## 🚀 Getting Started
 
-OrbitXUI is designed to be adapted to your project.
+Visit the OrbitXUI website to explore the components:
 
-You can customize:
+**https://orbitxui.vercel.app**
 
-- Colors
-- Typography
-- Spacing
-- Border radius
-- Shadows
-- Animations
-- Component variants
-- Dark/light themes
+Choose a component, explore the preview, view the implementation, and integrate it into your project.
 
-The goal is simple:
+### Example
 
-> **OrbitXUI should fit your design system—not force your design system to fit OrbitXUI.**
+```tsx
+import { Component } from "@/components/ui/component";
+
+export default function Example() {
+  return <Component />;
+}
+```
+
+> Component installation and usage instructions are available on the individual component pages.
+
+---
+
+## 🎨 Built for Creative Interfaces
+
+OrbitXUI is particularly useful for:
+
+- 🚀 SaaS landing pages
+- 🤖 AI applications
+- 🎨 Creative portfolios
+- 🧪 Experimental interfaces
+- 🌐 Marketing websites
+- 📊 Interactive dashboards
+- 💻 Developer tools
+- 🕹️ Interactive experiences
+
+If you want your interface to feel more **alive**, OrbitXUI is built for you.
 
 ---
 
@@ -122,28 +104,29 @@ The goal is simple:
 OrbitXUI is built with modern web technologies:
 
 - **React**
+- **Next.js**
 - **TypeScript**
 - **Tailwind CSS**
-- **Next.js**
-- **Lucide Icons**
+- **Lucide React**
+- **Modern CSS & Web APIs**
 
-The project is designed to work naturally with modern React applications.
+Some components also use animation, physics, shaders, and interactive rendering techniques.
 
 ---
 
 ## 📖 Documentation
 
-Detailed documentation, examples, and component previews are available on the official website.
+Explore the complete collection of components and their implementations:
 
-### 👉 [Explore the Documentation](https://orbitxui.vercel.app)
+### 👉 [Explore OrbitXUI](https://orbitxui.vercel.app)
 
-Each component aims to provide:
+Each component is designed to provide:
 
-- Live preview
+- Live interactive preview
 - Source code
 - Usage examples
-- Customization examples
-- Component variants
+- Customization options
+- Implementation details
 - Installation instructions
 
 ---
@@ -152,85 +135,94 @@ Each component aims to provide:
 
 OrbitXUI is open source and contributions are welcome.
 
-Whether you want to:
+You can contribute by:
 
-- Add a new component
-- Improve an existing component
-- Fix a bug
-- Improve accessibility
-- Improve documentation
-- Improve developer experience
-- Suggest a feature
-
-—we'd love your contribution.
+- Adding new components
+- Improving existing components
+- Fixing bugs
+- Improving performance
+- Improving accessibility
+- Improving documentation
+- Suggesting new interactions
+- Improving developer experience
 
 ### 1. Fork the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/orbitxui.git
+git clone https://github.com/Dhruv7Tripathi/OrbitXUI.git
 ```
 
-### 2. Create a branch
+### 2. Move into the project
+
+```bash
+cd OrbitXUI
+```
+
+### 3. Create a branch
 
 ```bash
 git checkout -b feature/your-feature
 ```
 
-### 3. Install dependencies
+### 4. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Start the development server
+### 5. Start the development server
 
 ```bash
 npm run dev
 ```
 
-### 5. Make your changes
+The development server will start locally.
 
-Build your component, test it, and make sure everything works correctly.
+### 6. Make your changes
 
-### 6. Commit your changes
+Create or improve a component and test it locally.
+
+### 7. Commit your changes
 
 ```bash
 git add .
 git commit -m "feat: add new component"
 ```
 
-### 7. Push your branch
+### 8. Push your branch
 
 ```bash
 git push origin feature/your-feature
 ```
 
-### 8. Open a Pull Request
+### 9. Open a Pull Request
 
-Create a Pull Request with a clear description of what you've changed.
+Open a Pull Request on GitHub with a clear description of your changes.
 
 ---
 
 ## 💡 Feature Requests
 
-Have an idea for OrbitXUI?
+Have an idea for a new component or interaction?
 
-Open a GitHub issue and describe:
+[**Open a Feature Request →**](https://github.com/Dhruv7Tripathi/OrbitXUI/issues/new)
+
+When submitting an idea, include:
 
 1. What you want to add
 2. Why it would be useful
-3. How you think it should work
-4. Any examples or references
-
-Community feedback helps shape the future of OrbitXUI.
+3. How the interaction should work
+4. Examples or references, if available
 
 ---
 
 ## 🐛 Bug Reports
 
-Found a bug?
+Found something that isn't working correctly?
 
-Please create an issue and include:
+[**Report a Bug →**](https://github.com/Dhruv7Tripathi/OrbitXUI/issues/new)
+
+Please include:
 
 - Component name
 - Expected behavior
@@ -239,17 +231,15 @@ Please create an issue and include:
 - Browser/device information
 - Screenshots or recordings when useful
 
-The more information you provide, the easier it is to fix.
-
 ---
 
-## 🌟 Support the Project
+## 🌟 Support OrbitXUI
 
 If OrbitXUI helps you build something, consider giving the repository a ⭐.
 
-It helps the project reach more developers and motivates continued development.
+Every star helps the project reach more developers and motivates continued development.
 
-**Star the project → Fork it → Build something awesome.**
+**Star → Fork → Build → Share**
 
 ---
 
@@ -263,21 +253,22 @@ See the [LICENSE](LICENSE) file for more information.
 
 ## 🔗 Links
 
-- 🌐 **Website:** https://orbitxui.vercel.app
-- 💻 **GitHub:** Add your repository URL
-- 📖 **Documentation:** https://orbitxui.vercel.app
-- 🐛 **Issues:** Add your GitHub issues URL
+- 🌐 **Website:** [orbitxui.vercel.app](https://orbitxui.vercel.app)
+- 💻 **GitHub:** [github.com/Dhruv7Tripathi/OrbitXUI](https://github.com/Dhruv7Tripathi/OrbitXUI)
+- 📖 **Documentation:** [orbitxui.vercel.app](https://orbitxui.vercel.app)
+- 🐛 **Issues:** [GitHub Issues](https://github.com/Dhruv7Tripathi/OrbitXUI/issues)
+- ➕ **New Issue:** [Create an Issue](https://github.com/Dhruv7Tripathi/OrbitXUI/issues/new)
 
 ---
 
 <div align="center">
 
-### OrbitXUI
+## OrbitXUI
 
-**Build beautiful interfaces. Faster.**
+**Interactive components for modern web experiences.**
 
 Made with ❤️ for the React community.
 
-[Explore OrbitXUI](https://orbitxui.vercel.app)
+[**Explore OrbitXUI →**](https://orbitxui.vercel.app)
 
 </div>

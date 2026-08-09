@@ -8,12 +8,11 @@ export function OrbitNavbar() {
     <header className="relative z-10 mx-auto w-full max-w-7xl px-5 pt-5 sm:px-8 sm:pt-7 lg:px-10">
       <nav aria-label="Main navigation" className="flex items-center justify-between">
         <Link href="#top" className="group flex items-center gap-2.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">
-          <span className="text-lg font-semibold tracking-tight text-foreground">OrbitUI</span>
+          <span className="text-lg font-semibold tracking-tight text-foreground">OrbitX UI</span>
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">
           <Link href="/components/AnimatedNetWorks" className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Components</Link>
-          <Link href="/pricing" className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Pricing</Link>
           <span aria-hidden="true" className="h-6 w-px bg-border" />
           <Link aria-label="OrbitUI on GitHub" href="https://github.com/dhruv7tripathi" className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">
             <SiGithub className="size-4" />
