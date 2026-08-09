@@ -2,7 +2,7 @@ export const title = "Split Flap Text";
 export const routepoint = "split-flap-text";
 export const description = "Interactive split flap text component with mouse and touch support.";
 
-export const cliscript = "add @orbitui/split-flap-text";
+export const cliscript = "add @orbitui/registry/splitflaptext";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

@@ -6,7 +6,7 @@ export const routepoint = "gravity-well";
 export const description =
   "Interactive particle physics canvas with gravity wells, orbit mode, chaos mode and black holes.";
 
-export const cliscript = "add @orbitui/gravity-well";
+export const cliscript = "add @orbitui/registry/gravitywell";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

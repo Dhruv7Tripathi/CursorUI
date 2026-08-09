@@ -3,7 +3,7 @@ export const routepoint = "verlet-rope";
 export const description =
   "Interactive physics rope simulation built with Canvas using Verlet integration.";
 
-export const cliscript = "add @orbitui/verlet-rope";
+export const cliscript = "add @orbitui/registry/verletrope";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

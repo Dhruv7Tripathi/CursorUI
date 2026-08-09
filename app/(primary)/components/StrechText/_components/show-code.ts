@@ -2,7 +2,7 @@ export const title = "Stretch Text";
 export const routepoint = "stretch-text";
 export const description = "Interactive stretch text component with mouse and touch support.";
 
-export const cliscript = "add @orbitui/stretch-text";
+export const cliscript = "add @orbitui/registry/stretchtext";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,
