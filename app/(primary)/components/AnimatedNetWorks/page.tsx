@@ -2,15 +2,15 @@ import AnimatedNetworkPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Animated Networks | OrbitUI",
+  title: "Animated Networks | OrbitXUI",
   description:
-    "OrbitUI's Animated Networks component helps developers create visually engaging and interactive network visualizations with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality network component into your projects.",
+    "OrbitXUI's Animated Networks component helps developers create visually engaging and interactive network visualizations with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality network component into your projects.",
   keywords: [
     "Animated Networks Component",
     "React Network Animation",
     "Framer Motion Networks",
     "Tailwind CSS Networks",
-    "OrbitUI Components",
+    "OrbitXUI Components",
     "UI Animation Library",
     "Smooth Network Transitions",
     "React UI Kit",
@@ -34,17 +34,17 @@ export const metadata: Metadata = {
   publisher: "Dhruv Tripathi",
   openGraph: {
     title:
-      "Animated Form Component for React — Smooth UI/UX with Framer Motion | OrbitUI",
+      "Animated Form Component for React — Smooth UI/UX with Framer Motion | OrbitXUI",
     description:
-      "Build stunning animated forms with OrbitUI's React component. Smooth UX, accessible design, and easy integration with Tailwind CSS & Framer Motion. Perfect for modern web apps and SaaS products.",
-    url: "https://orbitui.in/components/animated-form",
-    siteName: "OrbitUI",
+      "Build stunning animated forms with OrbitXUI's React component. Smooth UX, accessible design, and easy integration with Tailwind CSS & Framer Motion. Perfect for modern web apps and SaaS products.",
+    url: "https://orbitXui.in/components/animated-form",
+    siteName: "OrbitXUI",
     images: [
       {
-        url: "https://orbitui.in/ogimage-orbitui.png",
+        url: "https://orbitxui.vercel.app/ogimage-orbitxui.png",
         width: 1200,
         height: 630,
-        alt: "OrbitUI Open Graph Image",
+        alt: "OrbitXUI Open Graph Image",
       },
     ],
     locale: "en_US",
@@ -53,10 +53,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Animated Form Component for React — Smooth UI/UX with Framer Motion | OrbitUI",
+      "Animated Form Component for React — Smooth UI/UX with Framer Motion | OrbitXUI",
     description:
-      "OrbitUI's Animated Form component enables smooth, accessible, and customizable forms in React apps. Powered by TailwindCSS & Framer Motion.",
-    images: ["https://orbitui.in/ogimage-orbitui.png"],
+      "OrbitXUI's Animated Form component enables smooth, accessible, and customizable forms in React apps. Powered by TailwindCSS & Framer Motion.",
+    images: ["https://orbitXui.in/ogimage-orbitXui.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

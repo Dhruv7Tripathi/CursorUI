@@ -241,21 +241,11 @@ Every star helps the project reach more developers and motivates continued devel
 
 **Star → Fork → Build → Share**
 
----
-
-## 📜 License
-
-OrbitXUI is open source and available under the **MIT License**.
-
-See the [LICENSE](LICENSE) file for more information.
-
----
-
 ## 🔗 Links
 
 - 🌐 **Website:** [orbitxui.vercel.app](https://orbitxui.vercel.app)
 - 💻 **GitHub:** [github.com/Dhruv7Tripathi/OrbitXUI](https://github.com/Dhruv7Tripathi/OrbitXUI)
-- 📖 **Documentation:** [orbitxui.vercel.app](https://orbitxui.vercel.app)
+- 📖 **Documentation:** [orbitxui.vercel.app](https://orbitxui.vercel.app/docs/introduction)
 - 🐛 **Issues:** [GitHub Issues](https://github.com/Dhruv7Tripathi/OrbitXUI/issues)
 - ➕ **New Issue:** [Create an Issue](https://github.com/Dhruv7Tripathi/OrbitXUI/issues/new)
 

@@ -12,10 +12,10 @@ export function OrbitNavbar() {
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">
-          <Link href="/components/AnimatedNetWorks" className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Components</Link>
+          <Link href="/components/AnimatedNetWorks" className="text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">Components Pack</Link>
           <span aria-hidden="true" className="h-6 w-px bg-border" />
           <Link aria-label="OrbitUI on GitHub" href="https://github.com/dhruv7tripathi" className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">
-            <SiGithub className="size-4" />
+            <SiGithub className="size-5" />
           </Link>
           <Link aria-label="OrbitUI on Twitter" href="https://twitter.com/dhruvtripathi77" className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">
             <SiX className="size-4" />
