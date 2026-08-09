@@ -2,7 +2,7 @@ export const title = "Crystal Shatter Text";
 export const routepoint = "crystal-shatter-text";
 export const description = "Interactive crystal-style typography animation powered by Framer Motion.";
 
-export const cliscript = "add @orbitui/registry/crystal-shatter-text";
+export const cliscript = "add @orbitxui/registry/crystal-shatter-text";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

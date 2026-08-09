@@ -2,7 +2,7 @@ export const title = "Animated Networks";
 export const routepoint = "animated-networks";
 export const description = "Interactive animated networks component with mouse effects and customizable parameters.";
 
-export const cliscript = "add @orbitui/registry/animatednetworks";
+export const cliscript = "add @orbitxui/registry/animatednetworks";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

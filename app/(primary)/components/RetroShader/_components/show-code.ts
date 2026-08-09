@@ -2,7 +2,7 @@ export const title = "Retro Shader";
 export const routepoint = "retro-shader";
 export const description = "Interactive retro shader component with mouse effects and customizable parameters.";
 
-export const cliscript = "add @orbitui/registry/retroshader";
+export const cliscript = "add @orbitxui/registry/retroshader";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import Link from "next/link";
 import { OrbitNavbar } from "@/components/landingpage/landing-navbar";
-import { OrbitPreview } from "@/components/landingpage/orbit-preview";
+// import { OrbitPreview } from "@/components/landingpage/orbit-preview";
 
 export default function Page() {
     return (
@@ -61,7 +61,7 @@ export default function Page() {
                 </div>
 
                 {/* Component preview */}
-                <OrbitPreview />
+                {/* <OrbitPreview /> */}
             </section>
         </main>
     );

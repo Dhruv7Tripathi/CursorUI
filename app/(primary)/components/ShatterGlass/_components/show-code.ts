@@ -3,7 +3,7 @@ export const routepoint = "shatter-glass";
 export const description =
   "Interactive glass shattering canvas component with realistic fragments and customizable physics.";
 
-export const cliscript = "add @orbitui/registry/shatterglass";
+export const cliscript = "add @orbitxui/registry/shatterglass";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

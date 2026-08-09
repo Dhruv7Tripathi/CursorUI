@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { IconMenu2, IconX } from "@tabler/icons-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { IconBrandGithub, IconBrandX, IconStarFilled } from "@tabler/icons-react"
 import DocumentSearch from "./search"
 import { cn } from "@/lib/utils"
 export default function Navbar() {
@@ -30,8 +31,30 @@ export default function Navbar() {
 
             className="hidden md:flex items-center space-x-4"
           >
-            <div className="flex items-center ml-24 mr-6 gap-4 ">
+            <div className="flex items-center ml-24 mr-6 gap-4">
               <DocumentSearch />
+
+              <Link
+                href="https://github.com/Dhruv7Tripathi/OrbitXUI"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Star on GitHub"
+                className="inline-flex h-9 items-center gap-2 rounded-lg border border-neutral-300 bg-white px-3 text-sm font-medium text-black transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:bg-black dark:text-white dark:hover:bg-neutral-900"
+              >
+                <IconBrandGithub size={18} />
+                <span>Star</span>
+                <IconStarFilled size={14} className="text-yellow-400" />
+              </Link>
+
+              <Link
+                href="https://x.com/dhruvtripathi77"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="X"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-neutral-300 bg-white text-black transition-colors hover:bg-neutral-100 dark:border-neutral-800 dark:bg-black dark:text-white dark:hover:bg-neutral-900"
+              >
+                <IconBrandX size={18} />
+              </Link>
             </div>
           </div>
 
