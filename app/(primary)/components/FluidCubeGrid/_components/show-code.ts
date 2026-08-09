@@ -3,7 +3,7 @@ export const routepoint = "fluid-cube-grid";
 export const description =
   "Interactive 3D voxel grid built with React Three Fiber and Three.js.";
 
-export const cliscript = "add @orbitxui/registry/fluid-cube-grid";
+export const cliscript = "add @orbitxui/fluidcubegrid";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,
