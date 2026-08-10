@@ -6,7 +6,7 @@ export const routepoint = "gravity-well";
 export const description =
   "Interactive particle physics canvas with gravity wells, orbit mode, chaos mode and black holes.";
 
-export const cliscript = "add @orbitxui/gravitywell";
+export const cliscript = "add https://www.orbitxui.vercel.app/registry/gravitywell.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,
