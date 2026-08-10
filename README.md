@@ -149,7 +149,7 @@ You can contribute by:
 ### 1. Fork the repository
 
 ```bash
-git clone https://github.com/Dhruv7Tripathi/cursorxui.git
+git clone https://github.com/Dhruv7Tripathi/cursorui.git
 ```
 
 ### 2. Move into the project
@@ -205,7 +205,7 @@ Open a Pull Request on GitHub with a clear description of your changes.
 
 Have an idea for a new component or interaction?
 
-[**Open a Feature Request →**](https://github.com/Dhruv7Tripathi/cursorxui/issues/new)
+[**Open a Feature Request →**](https://github.com/Dhruv7Tripathi/cursorui/issues/new)
 
 When submitting an idea, include:
 
@@ -220,7 +220,7 @@ When submitting an idea, include:
 
 Found something that isn't working correctly?
 
-[**Report a Bug →**](https://github.com/Dhruv7Tripathi/cursorxui/issues/new)
+[**Report a Bug →**](https://github.com/Dhruv7Tripathi/cursorui/issues/new)
 
 Please include:
 
@@ -244,10 +244,10 @@ Every star helps the project reach more developers and motivates continued devel
 ## 🔗 Links
 
 - 🌐 **Website:** [cursorxui.vercel.app](https://cursorxui.vercel.app)
-- 💻 **GitHub:** [github.com/Dhruv7Tripathi/cursorxui](https://github.com/Dhruv7Tripathi/cursorxui)
+- 💻 **GitHub:** [github.com/Dhruv7Tripathi/cursorxui](https://github.com/Dhruv7Tripathi/cursorui)
 - 📖 **Documentation:** [cursorxui.vercel.app](https://cursorxui.vercel.app/docs/introduction)
-- 🐛 **Issues:** [GitHub Issues](https://github.com/Dhruv7Tripathi/cursorxui/issues)
-- ➕ **New Issue:** [Create an Issue](https://github.com/Dhruv7Tripathi/cursorxui/issues/new)
+- 🐛 **Issues:** [GitHub Issues](https://github.com/Dhruv7Tripathi/cursorui/issues)
+- ➕ **New Issue:** [Create an Issue](https://github.com/Dhruv7Tripathi/cursorui/issues/new)
 
 ---
 
