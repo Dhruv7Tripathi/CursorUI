@@ -14,7 +14,7 @@ export const Footer = () => {
                 aria-label="home"
                 className=" flex items-center space-x-2">
                 {/* <StackedLayersLogo /> */}
-                <span className='text-2xl font-bold'>OrbitXUI</span>
+                <span className='text-2xl font-bold'>cursorui</span>
               </Link>
               <div className="mr-2 mt-4 max-w-fit">
                 <Link

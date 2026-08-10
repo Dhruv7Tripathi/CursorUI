@@ -22,6 +22,6 @@
   "menuColor": "default",
   "menuAccent": "subtle",
   "registries": {
-    "@orbitxui": "https://orbitxui.vercel.app/registry/{name}.json"
+    "@cursorui": "https://cursorui.vercel.app/registry/{name}.json"
   }
 }

@@ -2,7 +2,7 @@ export const title = "Retro Shader";
 export const routepoint = "retro-shader";
 export const description = "Interactive retro shader component with mouse effects and customizable parameters.";
 
-export const cliscript = "add https://www.orbitxui.vercel.app/registry/retroshader.json";
+export const cliscript = "add https://www.cursorui.vercel.app/registry/retroshader.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

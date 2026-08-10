@@ -3,7 +3,7 @@ export const routepoint = "cursor-predator";
 export const description =
   "Interactive particle field that flees from the cursor and smoothly reforms into its original grid.";
 
-export const cliscript = "add https://www.orbitxui.vercel.app/registry/cursorpredator.json";
+export const cliscript = "add https://www.cursorui.vercel.app/registry/cursorpredator.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

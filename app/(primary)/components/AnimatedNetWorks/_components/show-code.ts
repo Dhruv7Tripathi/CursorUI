@@ -2,7 +2,7 @@ export const title = "Animated Networks";
 export const routepoint = "animated-networks";
 export const description = "Interactive animated networks component with mouse effects and customizable parameters.";
 
-export const cliscript = "add https://www.orbitxui.vercel.app/registry/animated-networks.json";
+export const cliscript = "add https://www.cursorui.vercel.app/registry/animated-networks.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

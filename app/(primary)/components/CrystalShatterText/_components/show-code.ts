@@ -2,7 +2,7 @@ export const title = "Crystal Shatter Text";
 export const routepoint = "crystal-shatter-text";
 export const description = "Interactive crystal-style typography animation powered by Framer Motion.";
 
-export const cliscript = "add https://www.orbitxui.vercel.app/registry/crystalshattertext.json";
+export const cliscript = "add https://www.cursorui.vercel.app/registry/crystalshattertext.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

@@ -12,7 +12,7 @@ const SplitFlapTextPreview = () => {
         <div className="flex items-center justify-between border-b border-border/80 px-4 py-3 sm:px-6">
           <div className="flex items-center gap-2">
             <span className="size-2 rounded-full bg-brand" />
-            <span className="font-mono text-[11px] text-muted-foreground">orbitXui </span>
+            <span className="font-mono text-[11px] text-muted-foreground">cursorui </span>
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
             <Code2 className="size-3.5" />
