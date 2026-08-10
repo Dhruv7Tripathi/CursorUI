@@ -2,9 +2,9 @@ import ShatterGlassPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shatter Glass | OrbitUI",
+  title: "Shatter Glass | CursorXUI",
   description:
-    "OrbitUI's Shatter Glass component brings realistic glass-breaking interactions to React applications using the HTML5 Canvas API. Featuring dynamic crack propagation, physics-driven fragments, customizable color palettes, gravity controls, and interactive mouse gestures, it's perfect for landing pages, portfolios, games, and creative web experiences. Easily copy-paste and customize this high-performance canvas component.",
+    "CursorXUI's Shatter Glass component brings realistic glass-breaking interactions to React applications using the HTML5 Canvas API. Featuring dynamic crack propagation, physics-driven fragments, customizable color palettes, gravity controls, and interactive mouse gestures, it's perfect for landing pages, portfolios, games, and creative web experiences. Easily copy-paste and customize this high-performance canvas component.",
   keywords: [
     "Shatter Glass Component",
     "Glass Break Animation",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Mouse Interaction",
     "Particle Animation",
     "Creative UI Components",
-    "OrbitUI Components",
+    "CursorXUI Components",
     "Frontend Animation",
     "Interactive Background",
     "Copy Paste UI Components",
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
     title:
       "Shatter Glass Component for React — Interactive Canvas Physics | OrbitUI",
     description:
-      "Create immersive glass-breaking experiences with OrbitUI's Shatter Glass component. Built with HTML5 Canvas for realistic fragments, crack propagation, and customizable physics.",
-    url: "https://orbitui.in/components/shatter-glass",
-    siteName: "OrbitUI",
+      "Create immersive glass-breaking experiences with CursorXUI's Shatter Glass component. Built with HTML5 Canvas for realistic fragments, crack propagation, and customizable physics.",
+    url: "https://cursorxui.vercel.app/components/shatter-glass",
+    siteName: "CursorXUI",
     images: [
       {
-        url: "https://orbitui.in/ogimage-orbitui.png",
+        url: "https://cursorxui.vercel.app/ogimage-CursorXUI.png",
         width: 1200,
         height: 630,
-        alt: "OrbitUI Open Graph Image",
+        alt: "CursorXUI Open Graph Image",
       },
     ],
     locale: "en_US",
@@ -59,10 +59,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Shatter Glass Component for React — Interactive Canvas Physics | OrbitUI",
+      "Shatter Glass Component for React — Interactive Canvas Physics | CursorXUI",
     description:
-      "Build stunning glass-shattering interactions with realistic fragments, crack propagation, and customizable physics using OrbitUI.",
-    images: ["https://orbitui.in/ogimage-orbitui.png"],
+      "Build stunning glass-shattering interactions with realistic fragments, crack propagation, and customizable physics using CursorXUI.",
+    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

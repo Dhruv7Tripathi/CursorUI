@@ -1,4 +1,4 @@
-# cursorxui
+# CursorXUi
 
 ### Interactive UI components for modern web experiences.
 

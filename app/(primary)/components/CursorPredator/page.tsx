@@ -2,9 +2,9 @@ import CursorPredatorPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cursor Predator | OrbitUI",
+  title: "Cursor Predator | CursorXUI ",
   description:
-    "OrbitUI's Cursor Predator is an interactive canvas background where particles flee from the cursor and smoothly return to their original positions. Perfect for hero sections, landing pages, and immersive portfolio experiences.",
+    "CursorXUI 's Cursor Predator is an interactive canvas background where particles flee from the cursor and smoothly return to their original positions. Perfect for hero sections, landing pages, and immersive portfolio experiences.",
   keywords: [
     "Cursor Predator",
     "Cursor Interaction",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Creative UI",
     "Frontend Components",
     "Modern UI",
-    "OrbitUI",
+    "CursorXUI ",
     "Copy Paste UI Components",
     "Next.js Components",
     "Open Source UI Components",
@@ -38,17 +38,17 @@ export const metadata: Metadata = {
   publisher: "Dhruv Tripathi",
   openGraph: {
     title:
-      "Cursor Predator — Interactive Particle Background | OrbitUI",
+      "Cursor Predator — Interactive Particle Background | CursorXUI ",
     description:
       "Create immersive interactive backgrounds with Cursor Predator. A lightweight HTML5 canvas particle animation that reacts naturally to cursor movement.",
-    url: "https://orbitui.in/components/cursor-predator",
-    siteName: "OrbitUI",
+    url: "https://cursorxui.vercel.app/components/cursor-predator",
+    siteName: "CursorXUI ",
     images: [
       {
-        url: "https://orbitui.in/ogimage-orbitui.png",
+        url: "https://cursorxui.vercel.app/ogimage-CursorXUI .png",
         width: 1200,
         height: 630,
-        alt: "Cursor Predator - OrbitUI",
+        alt: "Cursor Predator - CursorXUI ",
       },
     ],
     locale: "en_US",
@@ -57,10 +57,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Cursor Predator — Interactive Particle Background | OrbitUI",
+      "Cursor Predator — Interactive Particle Background | CursorXUI ",
     description:
       "A lightweight HTML5 canvas particle animation that repels from the cursor and smoothly reforms into a dynamic grid.",
-    images: ["https://orbitui.in/ogimage-orbitui.png"],
+    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI .png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

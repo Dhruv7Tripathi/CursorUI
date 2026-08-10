@@ -2,9 +2,9 @@ import FluidCubeGridPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fluid Cube Grid | OrbitUI",
+  title: "Fluid Cube Grid | CursorXUI ",
   description:
-    "OrbitUI's Fluid Cube Grid is an interactive React Three Fiber component featuring a responsive 3D voxel grid that dynamically reacts to cursor movement with fluid physics, smooth transitions, and high-performance WebGL rendering. Perfect for hero sections, portfolios, and modern landing pages.",
+    "CursorXUI 's Fluid Cube Grid is an interactive React Three Fiber component featuring a responsive 3D voxel grid that dynamically reacts to cursor movement with fluid physics, smooth transitions, and high-performance WebGL rendering. Perfect for hero sections, portfolios, and modern landing pages.",
   keywords: [
     "Fluid Cube Grid",
     "React Three Fiber",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Instanced Mesh",
     "React Animation",
     "Three.js Components",
-    "OrbitUI",
+    "CursorXUI ",
     "Landing Page Animation",
     "Portfolio Hero",
     "Creative UI",
@@ -39,17 +39,17 @@ export const metadata: Metadata = {
   publisher: "Dhruv Tripathi",
   openGraph: {
     title:
-      "Fluid Cube Grid — Interactive React Three Fiber Component | OrbitUI",
+      "Fluid Cube Grid — Interactive React Three Fiber Component | CursorXUI ",
     description:
-      "Build immersive WebGL experiences with OrbitUI's Fluid Cube Grid. A responsive 3D voxel grid powered by React Three Fiber and Three.js with fluid cursor interactions.",
-    url: "https://orbitui.in/components/fluid-cube-grid",
-    siteName: "OrbitUI",
+      "Build immersive WebGL experiences with CursorXUI 's Fluid Cube Grid. A responsive 3D voxel grid powered by React Three Fiber and Three.js with fluid cursor interactions.",
+    url: "https://cursorxui.vercel.app/components/fluid-cube-grid",
+    siteName: "CursorXUI ",
     images: [
       {
-        url: "https://orbitui.in/ogimage-orbitui.png",
+        url: "https://cursorxui.vercel.app/ogimage-CursorXUI .png",
         width: 1200,
         height: 630,
-        alt: "Fluid Cube Grid - OrbitUI",
+        alt: "Fluid Cube Grid - CursorXUI ",
       },
     ],
     locale: "en_US",
@@ -58,10 +58,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Fluid Cube Grid — Interactive React Three Fiber Component | OrbitUI",
+      "Fluid Cube Grid — Interactive React Three Fiber Component | CursorXUI ",
     description:
-      "Create stunning interactive 3D hero sections using React Three Fiber, Three.js, and OrbitUI.",
-    images: ["https://orbitui.in/ogimage-orbitui.png"],
+      "Create stunning interactive 3D hero sections using React Three Fiber, Three.js, and CursorXUI .",
+    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI .png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

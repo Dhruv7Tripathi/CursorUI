@@ -2,7 +2,7 @@ export const title = "Split Flap Text";
 export const routepoint = "split-flap-text";
 export const description = "Interactive split flap text component with mouse and touch support.";
 
-export const cliscript = "add https://www.cursorxui.vercel.app/registry/splitflaptext.json";
+export const cliscript = "add https://cursorxui.vercel.app/registry/splitflaptext.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

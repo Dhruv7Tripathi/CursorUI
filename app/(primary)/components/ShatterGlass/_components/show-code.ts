@@ -3,7 +3,7 @@ export const routepoint = "shatter-glass";
 export const description =
   "Interactive glass shattering canvas component with realistic fragments and customizable physics.";
 
-export const cliscript = "add https://www.cursorxui.vercel.app/registry/shatterglass.json";
+export const cliscript = "add https://cursorxui.vercel.app/registry/shatterglass.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

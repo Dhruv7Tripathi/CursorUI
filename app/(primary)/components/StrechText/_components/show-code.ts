@@ -2,7 +2,7 @@ export const title = "Stretch Text";
 export const routepoint = "stretch-text";
 export const description = "Interactive stretch text component with mouse and touch support.";
 
-export const cliscript = "add https://www.cursorxui.vercel.app/registry/stretchtext.json";
+export const cliscript = "add https://cursorxui.vercel.app/registry/stretchtext.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

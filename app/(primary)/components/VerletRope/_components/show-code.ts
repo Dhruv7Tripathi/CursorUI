@@ -3,7 +3,7 @@ export const routepoint = "verlet-rope";
 export const description =
   "Interactive physics rope simulation built with Canvas using Verlet integration.";
 
-export const cliscript = "add https://www.cursorxui.vercel.app/registry/verletrope.json";
+export const cliscript = "add https://cursorxui.vercel.app/registry/verletrope.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

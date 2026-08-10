@@ -1,12 +1,10 @@
-import fs from "node:fs";
-import path from "node:path";
 
 export const title = "Gravity Well";
 export const routepoint = "gravity-well";
 export const description =
   "Interactive particle physics canvas with gravity wells, orbit mode, chaos mode and black holes.";
 
-export const cliscript = "add https://www.cursorxui.vercel.app/registry/gravitywell.json";
+export const cliscript = "add https://cursorxui.vercel.app/registry/gravitywell.json";
 
 export const commandMap = {
   npm: `npx shadcn@latest ${cliscript}`,

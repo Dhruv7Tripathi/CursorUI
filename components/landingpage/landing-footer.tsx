@@ -137,7 +137,7 @@ export default function Footer() {
                   priority={true}
                   className="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0 dark:invert rounded-xl object-cover"
                 /> */}
-                <h3 className="text-lg sm:text-xl font-bold text-black dark:text-white">cursorxui</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-black dark:text-white">CursorXUi</h3>
               </Link>
               <p className="text-neutral-600 dark:text-neutral-300 text-sm sm:text-base leading-relaxed">
                 Orbit UI is an animated component library built for modern interfaces, delivering smooth interactions, polished motion, and reusable UI for fast-moving teams.

@@ -2,9 +2,9 @@ import VerletRopePreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Verlet Rope | OrbitUI",
+  title: "Verlet Rope | CursorXUI",
   description:
-    "OrbitUI's Verlet Rope component brings realistic rope physics to React applications using the HTML5 Canvas API and Verlet integration. Featuring interactive dragging, configurable stiffness, gravity, damping, wind simulation, and responsive rendering, it's perfect for hero sections, physics-based interfaces, creative websites, and interactive UI experiences. Easily copy-paste and customize this lightweight canvas component.",
+    "CursorXUI's Verlet Rope component brings realistic rope physics to React applications using the HTML5 Canvas API and Verlet integration. Featuring interactive dragging, configurable stiffness, gravity, damping, wind simulation, and responsive rendering, it's perfect for hero sections, physics-based interfaces, creative websites, and interactive UI experiences. Easily copy-paste and customize this lightweight canvas component.",
   keywords: [
     "Verlet Rope Component",
     "Verlet Integration",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Physics Simulation",
     "HTML5 Canvas",
     "Creative UI Components",
-    "OrbitUI Components",
+    "CursorXUI Components",
     "Interactive Animation",
     "Mouse Interaction",
     "Canvas Animation",
@@ -40,17 +40,17 @@ export const metadata: Metadata = {
   publisher: "Dhruv Tripathi",
   openGraph: {
     title:
-      "Verlet Rope Component for React — Interactive Canvas Physics | OrbitUI",
+      "Verlet Rope Component for React — Interactive Canvas Physics | CursorXUI",
     description:
-      "Build realistic rope physics using OrbitUI's Verlet Rope component. Powered by HTML5 Canvas and Verlet integration with drag interactions, wind effects, and customizable physics.",
-    url: "https://orbitui.in/components/verlet-rope",
-    siteName: "OrbitUI",
+      "Build realistic rope physics using CursorXUI's Verlet Rope component. Powered by HTML5 Canvas and Verlet integration with drag interactions, wind effects, and customizable physics.",
+    url: "https://cursorxui.vercel.app/components/verlet-rope",
+    siteName: "CursorXUI",
     images: [
       {
-        url: "https://orbitui.in/ogimage-orbitui.png",
+        url: "https://cursorxui.vercel.app/ogimage-CursorXUI.png",
         width: 1200,
         height: 630,
-        alt: "OrbitUI Open Graph Image",
+        alt: "CursorXUI Open Graph Image",
       },
     ],
     locale: "en_US",
@@ -59,10 +59,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Verlet Rope Component for React — Interactive Canvas Physics | OrbitUI",
+      "Verlet Rope Component for React — Interactive Canvas Physics | CursorXUI",
     description:
-      "Create realistic rope simulations with draggable nodes, wind effects, gravity, and smooth Verlet physics using OrbitUI.",
-    images: ["https://orbitui.in/ogimage-orbitui.png"],
+      "Create realistic rope simulations with draggable nodes, wind effects, gravity, and smooth Verlet physics using CursorXUI.",
+    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

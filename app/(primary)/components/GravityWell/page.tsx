@@ -3,16 +3,16 @@ import GravityWellPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gravity Well | OrbitUI",
+  title: "Gravity Well | CursorXUI",
   description:
-    "OrbitUI's Gravity Well component creates an interactive particle physics simulation where users can spawn gravity wells, black holes, and repulsion fields. Built with React, Canvas API, and Tailwind CSS, it's perfect for hero sections, landing pages, portfolios, and creative web experiences.",
+    "CursorXUI's Gravity Well component creates an interactive particle physics simulation where users can spawn gravity wells, black holes, and repulsion fields. Built with React, Canvas API, and Tailwind CSS, it's perfect for hero sections, landing pages, portfolios, and creative web experiences.",
   keywords: [
     "Gravity Well Component",
     "Particle Physics Animation",
     "React Canvas Component",
     "Interactive Particle System",
     "Canvas Physics",
-    "OrbitUI Components",
+    "CursorXUI Components",
     "React Particle Animation",
     "Creative Hero Section",
     "Landing Page Animation",
@@ -38,15 +38,15 @@ export const metadata: Metadata = {
     title:
       "Gravity Well Component for React — Interactive Particle Physics | OrbitUI",
     description:
-      "Build stunning interactive particle physics effects with OrbitUI's Gravity Well component. Create gravity wells, black holes, and orbit simulations using React, Canvas API, and Tailwind CSS.",
-    url: "https://orbitui.in/components/gravity-well",
-    siteName: "OrbitUI",
+      "Build stunning interactive particle physics effects with CursorXUI's Gravity Well component. Create gravity wells, black holes, and orbit simulations using React, Canvas API, and Tailwind CSS.",
+    url: "https://cursorxui.vercel.app/components/gravity-well",
+    siteName: "CursorXUI",
     images: [
       {
-        url: "https://orbitui.in/ogimage-orbitui.png",
+        url: "https://cursorxui.vercel.app/ogimage-CursorXUI.png",
         width: 1200,
         height: 630,
-        alt: "OrbitUI Open Graph Image",
+        alt: "CursorXUI Open Graph Image",
       },
     ],
     locale: "en_US",
@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Gravity Well Component for React — Interactive Particle Physics | OrbitUI",
+      "Gravity Well Component for React — Interactive Particle Physics | CursorXUI",
     description:
-      "Create beautiful particle simulations with gravity wells, black holes, and orbit effects using OrbitUI's React Canvas component.",
-    images: ["https://orbitui.in/ogimage-orbitui.png"],
+      "Create beautiful particle simulations with gravity wells, black holes, and orbit effects using CursorXUI's React Canvas component.",
+    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },
