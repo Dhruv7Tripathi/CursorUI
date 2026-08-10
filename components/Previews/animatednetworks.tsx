@@ -4,7 +4,7 @@ import MainContentContainer from "@/components/content/maincontentcontainer";
 
 import LivePreviewComponent from "@/components/layout/livepreview";
 import { Code2 } from "lucide-react";
-import { AnimatedNetwork } from "@/app/(primary)/components/AnimatedNetWorks/_components/animatedNetworks";
+import { AnimatedNetwork } from "@/app/(primary)/components/AnimatedNetWorks/_components/animated-networks";
 const AnimatedNetworkPreview = () => {
   return (
     <MainContentContainer>

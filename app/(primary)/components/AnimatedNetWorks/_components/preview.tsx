@@ -23,7 +23,7 @@ import { CodeBlock } from "@/components/code/CodeBlock";
 import { getNavigationFeaturedItems } from "@/lib/getNavigationFeaturedItems";
 import LivePreviewComponent from "@/components/layout/livepreview";
 // import dynamic from "next/dynamic";
-import { AnimatedNetwork } from "./animatedNetworks";
+import { AnimatedNetwork } from "./animated-networks";
 const AnimatedNetworkPreview = () => {
   const [sourceCode, setSourceCode] = useState(false);
   const [sourceManual, setSourceManual] = useState(false);
