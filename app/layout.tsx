@@ -16,18 +16,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cursorui.vercel.app"),
+  metadataBase: new URL("https://cursorxui.vercel.app"),
 
   title: {
-    default: "cursorui — Modern React UI Components",
-    template: "%s | cursorui",
+    default: "cursorxui — Modern React UI Components",
+    template: "%s | cursorxui",
   },
 
   description:
-    "cursorui is an open-source UI component library for React and Next.js, built with TypeScript and Tailwind CSS. Build beautiful, accessible, and customizable interfaces faster.",
+    "cursorxui is an open-source UI component library for React and Next.js, built with TypeScript and Tailwind CSS. Build beautiful, accessible, and customizable interfaces faster.",
 
   keywords: [
-    "cursorui",
+    "cursorxui",
     "UI components",
     "React UI components",
     "React component library",
@@ -49,27 +49,27 @@ export const metadata: Metadata = {
   ],
 
   creator: "Dhruv Tripathi",
-  publisher: "cursorui",
+  publisher: "cursorxui",
 
-  applicationName: "cursorui",
+  applicationName: "cursorxui",
 
   category: "technology",
 
   openGraph: {
-    title: "cursorui — Modern React UI Components",
+    title: "cursorxui — Modern React UI Components",
     description:
       "An open-source UI component library for React and Next.js. Build beautiful, accessible, and customizable interfaces with TypeScript and Tailwind CSS.",
 
-    url: "https://cursorui.vercel.app",
+    url: "https://cursorxui.vercel.app",
 
-    siteName: "cursorui",
+    siteName: "cursorxui",
 
     images: [
       {
-        url: "https://cursorui.vercel.app/og-image.png",
+        url: "https://cursorxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "cursorui — Modern React UI Components",
+        alt: "cursorxui — Modern React UI Components",
       },
     ],
 
@@ -80,12 +80,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "cursorui — Modern React UI Components",
+    title: "cursorxui — Modern React UI Components",
 
     description:
       "Open-source React UI components built with TypeScript and Tailwind CSS. Build beautiful interfaces faster.",
 
-    images: ["https://cursorui.vercel.app/og-image.png"],
+    images: ["https://cursorxui.vercel.app/og-image.png"],
   },
 
   icons: {
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://cursorui.vercel.app",
+    canonical: "https://cursorxui.vercel.app",
   },
 };
 

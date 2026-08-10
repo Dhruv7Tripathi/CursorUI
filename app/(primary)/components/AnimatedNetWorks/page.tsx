@@ -2,15 +2,15 @@ import AnimatedNetworkPreview from "./_components/preview";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Animated Networks | cursorui",
+  title: "Animated Networks | cursorxui",
   description:
-    "cursorui's Animated Networks component helps developers create visually engaging and interactive network visualizations with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality network component into your projects.",
+    "cursorxui's Animated Networks component helps developers create visually engaging and interactive network visualizations with smooth animations using React, Tailwind CSS, and Framer Motion. Perfect for modern web apps, landing pages, and SaaS products, it ensures a seamless user experience with accessible and customizable design patterns. Easily copy-paste and integrate this high-quality network component into your projects.",
   keywords: [
     "Animated Networks Component",
     "React Network Animation",
     "Framer Motion Networks",
     "Tailwind CSS Networks",
-    "cursorui Components",
+    "cursorxui Components",
     "UI Animation Library",
     "Smooth Network Transitions",
     "React UI Kit",
@@ -34,17 +34,17 @@ export const metadata: Metadata = {
   publisher: "Dhruv Tripathi",
   openGraph: {
     title:
-      "Animated Form Component for React — Smooth UI/UX with Framer Motion | cursorui",
+      "Animated Form Component for React — Smooth UI/UX with Framer Motion | cursorxui",
     description:
-      "Build stunning animated forms with cursorui's React component. Smooth UX, accessible design, and easy integration with Tailwind CSS & Framer Motion. Perfect for modern web apps and SaaS products.",
-    url: "https://cursorui.in/components/animated-form",
-    siteName: "cursorui",
+      "Build stunning animated forms with cursorxui's React component. Smooth UX, accessible design, and easy integration with Tailwind CSS & Framer Motion. Perfect for modern web apps and SaaS products.",
+    url: "https://cursorxui.in/components/animated-form",
+    siteName: "cursorxui",
     images: [
       {
-        url: "https://cursorui.vercel.app/ogimage-cursorui.png",
+        url: "https://cursorxui.vercel.app/ogimage-cursorxui.png",
         width: 1200,
         height: 630,
-        alt: "cursorui Open Graph Image",
+        alt: "cursorxui Open Graph Image",
       },
     ],
     locale: "en_US",
@@ -53,10 +53,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Animated Form Component for React — Smooth UI/UX with Framer Motion | cursorui",
+      "Animated Form Component for React — Smooth UI/UX with Framer Motion | cursorxui",
     description:
-      "cursorui's Animated Form component enables smooth, accessible, and customizable forms in React apps. Powered by TailwindCSS & Framer Motion.",
-    images: ["https://cursorui.in/ogimage-cursorui.png"],
+      "cursorxui's Animated Form component enables smooth, accessible, and customizable forms in React apps. Powered by TailwindCSS & Framer Motion.",
+    images: ["https://cursorxui.in/ogimage-cursorxui.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

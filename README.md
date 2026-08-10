@@ -1,24 +1,24 @@
-# cursorui
+# cursorxui
 
 ### Interactive UI components for modern web experiences.
 
-[![Website](https://img.shields.io/badge/Website-cursorui.vercel.app-black?style=flat-square)](https://cursorui.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-black?style=flat-square&logo=github)](https://github.com/Dhruv7Tripathi/cursorui)
+[![Website](https://img.shields.io/badge/Website-cursorxui.vercel.app-black?style=flat-square)](https://cursorxui.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-black?style=flat-square&logo=github)](https://github.com/Dhruv7Tripathi/cursorxui)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-**cursorui** is an open-source collection of interactive and experimental UI components for React. Built for developers who want to add motion, depth, and personality to modern web experiences without building complex interactions from scratch.
+**cursorxui** is an open-source collection of interactive and experimental UI components for React. Built for developers who want to add motion, depth, and personality to modern web experiences without building complex interactions from scratch.
 
 > **Build faster. Add motion. Create experiences that stand out.**
 
-[**Explore cursorui →**](https://cursorui.vercel.app)
+[**Explore cursorxui →**](https://cursorxui.vercel.app)
 
 ---
 
-## ✨ Why cursorui?
+## ✨ Why cursorxui?
 
 Modern interfaces shouldn't have to feel static.
 
-cursorui focuses on interactive components that bring movement and visual depth to your applications while remaining customizable and developer-friendly.
+cursorxui focuses on interactive components that bring movement and visual depth to your applications while remaining customizable and developer-friendly.
 
 - 🎨 **Modern & Experimental** — Unique components designed for standout interfaces.
 - ⚡ **Interactive** — Built around motion, interaction, and visual feedback.
@@ -32,7 +32,7 @@ cursorui focuses on interactive components that bring movement and visual depth 
 
 ## 🧩 Components
 
-cursorui currently includes a collection of interactive and experimental components.
+cursorxui currently includes a collection of interactive and experimental components.
 
 ### 🌌 Interactive & Visual
 
@@ -56,15 +56,15 @@ cursorui currently includes a collection of interactive and experimental compone
 
 ### More coming soon...
 
-cursorui is actively evolving. New interactive components and experiments are added regularly.
+cursorxui is actively evolving. New interactive components and experiments are added regularly.
 
 ---
 
 ## 🚀 Getting Started
 
-Visit the cursorui website to explore the components:
+Visit the cursorxui website to explore the components:
 
-**https://cursorui.vercel.app**
+**https://cursorxui.vercel.app**
 
 Choose a component, explore the preview, view the implementation, and integrate it into your project.
 
@@ -84,7 +84,7 @@ export default function Example() {
 
 ## 🎨 Built for Creative Interfaces
 
-cursorui is particularly useful for:
+cursorxui is particularly useful for:
 
 - 🚀 SaaS landing pages
 - 🤖 AI applications
@@ -95,13 +95,13 @@ cursorui is particularly useful for:
 - 💻 Developer tools
 - 🕹️ Interactive experiences
 
-If you want your interface to feel more **alive**, cursorui is built for you.
+If you want your interface to feel more **alive**, cursorxui is built for you.
 
 ---
 
 ## 🛠️ Tech Stack
 
-cursorui is built with modern web technologies:
+cursorxui is built with modern web technologies:
 
 - **React**
 - **Next.js**
@@ -118,7 +118,7 @@ Some components also use animation, physics, shaders, and interactive rendering 
 
 Explore the complete collection of components and their implementations:
 
-### 👉 [Explore cursorui](https://cursorui.vercel.app)
+### 👉 [Explore cursorxui](https://cursorxui.vercel.app)
 
 Each component is designed to provide:
 
@@ -133,7 +133,7 @@ Each component is designed to provide:
 
 ## 🤝 Contributing
 
-cursorui is open source and contributions are welcome.
+cursorxui is open source and contributions are welcome.
 
 You can contribute by:
 
@@ -149,13 +149,13 @@ You can contribute by:
 ### 1. Fork the repository
 
 ```bash
-git clone https://github.com/Dhruv7Tripathi/cursorui.git
+git clone https://github.com/Dhruv7Tripathi/cursorxui.git
 ```
 
 ### 2. Move into the project
 
 ```bash
-cd cursorui
+cd cursorxui
 ```
 
 ### 3. Create a branch
@@ -205,7 +205,7 @@ Open a Pull Request on GitHub with a clear description of your changes.
 
 Have an idea for a new component or interaction?
 
-[**Open a Feature Request →**](https://github.com/Dhruv7Tripathi/cursorui/issues/new)
+[**Open a Feature Request →**](https://github.com/Dhruv7Tripathi/cursorxui/issues/new)
 
 When submitting an idea, include:
 
@@ -220,7 +220,7 @@ When submitting an idea, include:
 
 Found something that isn't working correctly?
 
-[**Report a Bug →**](https://github.com/Dhruv7Tripathi/cursorui/issues/new)
+[**Report a Bug →**](https://github.com/Dhruv7Tripathi/cursorxui/issues/new)
 
 Please include:
 
@@ -233,9 +233,9 @@ Please include:
 
 ---
 
-## 🌟 Support cursorui
+## 🌟 Support cursorxui
 
-If cursorui helps you build something, consider giving the repository a ⭐.
+If cursorxui helps you build something, consider giving the repository a ⭐.
 
 Every star helps the project reach more developers and motivates continued development.
 
@@ -243,22 +243,22 @@ Every star helps the project reach more developers and motivates continued devel
 
 ## 🔗 Links
 
-- 🌐 **Website:** [cursorui.vercel.app](https://cursorui.vercel.app)
-- 💻 **GitHub:** [github.com/Dhruv7Tripathi/cursorui](https://github.com/Dhruv7Tripathi/cursorui)
-- 📖 **Documentation:** [cursorui.vercel.app](https://cursorui.vercel.app/docs/introduction)
-- 🐛 **Issues:** [GitHub Issues](https://github.com/Dhruv7Tripathi/cursorui/issues)
-- ➕ **New Issue:** [Create an Issue](https://github.com/Dhruv7Tripathi/cursorui/issues/new)
+- 🌐 **Website:** [cursorxui.vercel.app](https://cursorxui.vercel.app)
+- 💻 **GitHub:** [github.com/Dhruv7Tripathi/cursorxui](https://github.com/Dhruv7Tripathi/cursorxui)
+- 📖 **Documentation:** [cursorxui.vercel.app](https://cursorxui.vercel.app/docs/introduction)
+- 🐛 **Issues:** [GitHub Issues](https://github.com/Dhruv7Tripathi/cursorxui/issues)
+- ➕ **New Issue:** [Create an Issue](https://github.com/Dhruv7Tripathi/cursorxui/issues/new)
 
 ---
 
 <div align="center">
 
-## cursorui
+## cursorxui
 
 **Interactive components for modern web experiences.**
 
 Made with ❤️ for the React community.
 
-[**Explore cursorui →**](https://cursorui.vercel.app)
+[**Explore cursorxui →**](https://cursorxui.vercel.app)
 
 </div>

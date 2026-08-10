@@ -8,7 +8,7 @@ export function OrbitNavbar() {
     <header className="relative z-10 mx-auto w-full max-w-7xl px-5 pt-5 sm:px-8 sm:pt-7 lg:px-10">
       <nav aria-label="Main navigation" className="flex items-center justify-between">
         <Link href="#top" className="group flex items-center gap-2.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand">
-          <span className="text-lg font-semibold tracking-tight text-foreground">cursorui</span>
+          <span className="text-lg font-semibold tracking-tight text-foreground">cursorxui</span>
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">

@@ -23,7 +23,7 @@ export default function Navbar() {
               aria-label="home"
               className=" flex items-center p-2 m-2 mr-4 space-x-2">
 
-              <span className='text-2xl  space-x-2.5 font-bold'>cursorui</span>
+              <span className='text-2xl  space-x-2.5 font-bold'>cursorxui</span>
             </Link>
           </div>
 
@@ -35,7 +35,7 @@ export default function Navbar() {
               <DocumentSearch />
 
               <Link
-                href="https://github.com/Dhruv7Tripathi/cursorui"
+                href="https://github.com/Dhruv7Tripathi/cursorxui"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Star on GitHub"
