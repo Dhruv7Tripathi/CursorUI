@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRight } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import Link from "next/link";
