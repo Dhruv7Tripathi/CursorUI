@@ -78,4 +78,5 @@ export const primaryItems = [
   { name: 'Verlet Rope', href: '/components/VerletRope' },
   { name: 'Crystal Shatter Text', href: '/components/CrystalShatterText' },
   { name: 'Cursor Predator', href: '/components/CursorPredator' },
+  { name: 'Password UI', href: '/components/PasswordUI' },
 ];

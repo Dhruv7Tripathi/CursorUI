@@ -1,3 +1,5 @@
+"use client";
+
 import { SiX, SiGithub } from "react-icons/si";
 import { Menu, Moon, X } from 'lucide-react'
 import Link from 'next/link'

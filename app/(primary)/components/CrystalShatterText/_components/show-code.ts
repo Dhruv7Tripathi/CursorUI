@@ -145,33 +145,32 @@ interface CrystalCharProps {
   index: number;
 }
 
+function getOffsets(char: string, index: number) {
+  const code = char.charCodeAt(0) || 0;
+  const s1 = Math.sin(index * 12.9898 + code * 78.233) * 43758.5453;
+  const randX = s1 - Math.floor(s1);
+
+  const s2 = Math.sin(index * 39.346 + code * 11.123) * 24634.6345;
+  const randY = s2 - Math.floor(s2);
+
+  const s3 = Math.sin(index * 73.156 + code * 45.678) * 13758.5453;
+  const randR = s3 - Math.floor(s3);
+
+  return {
+    randomX: (randX - 0.5) * 140,
+    randomY: (randY - 0.5) * 80,
+    randomRotate: (randR - 0.5) * 220,
+  };
+}
+
 function CrystalChar({
   char,
   index,
 }: CrystalCharProps) {
-  const randomX =
-    useMemo(
-      () =>
-        (Math.random() - 0.5) *
-        140,
-      []
-    );
-
-  const randomY =
-    useMemo(
-      () =>
-        (Math.random() - 0.5) *
-        80,
-      []
-    );
-
-  const randomRotate =
-    useMemo(
-      () =>
-        (Math.random() - 0.5) *
-        220,
-      []
-    );
+  const { randomX, randomY, randomRotate } = useMemo(
+    () => getOffsets(char, index),
+    [char, index]
+  );
 
   if (char === " ") {
     return (
