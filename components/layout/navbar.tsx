@@ -37,7 +37,7 @@ const Navbar = () => {
             <div className="flex items-center gap-0.5">
               <SiGithub className="h-5 w-5" />
               <SiX className="h-5 w-5" />
-              <Themetoggle />
+              {/* <Themetoggle /> */}
             </div>
           </div>
           <div className="flex items-center space-x-1 lg:hidden">

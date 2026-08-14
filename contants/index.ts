@@ -3,10 +3,10 @@ export const navItems = [
     name: "Components Pack",
     href: "/components"
   },
-  {
-    name: "Pricing",
-    href: "/pricing"
-  },
+  // {
+  //   name: "Pricing",
+  //   href: "/pricing"
+  // },
   // {
   //   name: "Templates",
   //   href: "/templates"
