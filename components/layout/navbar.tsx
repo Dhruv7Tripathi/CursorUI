@@ -17,20 +17,8 @@ const Navbar = () => {
           <div className="flex items-center space-x-12">
             <Link href="/" className="flex items-center space-x-4">
               {/* <MyIcon className="h-5 w-5 text-black dark:text-white" /> */}
-              <span className="text-xl ml-8 font-bold">CursorXUI</span>
+              <span className="text-xl sm:ml-0 md:ml-8 font-bold">CursorXUI</span>
             </Link>
-
-            {/* <div className="hidden items-center space-x-6 lg:flex">
-              {navItems.map((item) => (
-                <AnchorNav
-                  key={item.name + item.href}
-                  absolute
-                  href={item.href}
-                >
-                  {item.name}
-                </AnchorNav>
-              ))}
-            </div> */}
           </div>
 
           <div className="hidden items-center space-x-2 lg:flex">
@@ -61,7 +49,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex items-center space-x-1 lg:hidden">
-            <SiGithub className="h-5 w-5" />
+            <Link
+              href="https://github.com/dhruv7tripathi/CursorUI"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-9 items-center gap-2 rounded-lg border border-border px-2.5 text-sm font-medium transition-colors hover:bg-white dark:hover:bg-black sm:px-3 lg:px-4"
+            >
+              <SiGithub size={17} aria-hidden="true" />
+            </Link>
             <Themetoggle />
             <NavbarDrawer />
           </div>
