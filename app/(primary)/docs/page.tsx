@@ -2,20 +2,20 @@ import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Documentation | OrbitUI",
+  title: "Documentation | cursorxui",
   description:
-    "Explore the official OrbitUI documentation to learn how to install, customize, and build modern, accessible React components using Tailwind CSS and Framer Motion. Get started with setup guides, usage instructions, and best practices for frontend developers.",
+    "Explore the official cursorxui documentation to learn how to install, customize, and build modern, accessible React components using Tailwind CSS and Framer Motion. Get started with setup guides, usage instructions, and best practices for frontend developers.",
   keywords: [
-    "OrbitUI Documentation",
+    "cursorxui Documentation",
     "React Component Library Guide",
     "Tailwind CSS UI Library",
     "Open Source UI Components",
-    "OrbitUI Docs",
+    "cursorxui Docs",
     "Frontend Design System",
     "Reusable React Components",
     "Framer Motion UI Components",
     "Accessible UI Components",
-    "OrbitUI by Dhruv Tripathi",
+    "cursorxui by Dhruv Tripathi",
     "Developer Tools",
     "Next.js UI Library",
     "Copy Paste UI Components",
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
   creator: "Dhruv Tripathi",
   publisher: "Dhruv Tripathi",
   openGraph: {
-    title: "OrbitUI Documentation — React Component Library Guide | OrbitUI",
+    title: "cursorxui Documentation — React Component Library Guide | cursorxui",
     description:
-      "Browse OrbitUI's official documentation to integrate open-source React components with Tailwind CSS and Framer Motion. Learn setup, usage, and best practices.",
-    url: "https://orbitui.in/docs",
-    siteName: "OrbitUI",
+      "Browse cursorxui's official documentation to integrate open-source React components with Tailwind CSS and Framer Motion. Learn setup, usage, and best practices.",
+    url: "https://cursorxui.vercel.app/docs",
+    siteName: "cursorxui",
     images: [
       {
-        url: "https://orbitui.in/ogimage-orbitui.png",
+        url: "https://cursorxui.vercel.app/ogimage-cursorxui.png",
         width: 1200,
         height: 630,
-        alt: "OrbitUI Documentation Open Graph Image",
+        alt: "cursorxui Documentation Open Graph Image",
       },
     ],
     locale: "en_US",
@@ -44,11 +44,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OrbitUI Documentation — React Component Library Guide | OrbitUI",
+    title: "cursorxui Documentation — React Component Library Guide | cursorxui",
     description:
-      "Official OrbitUI documentation for integrating React UI components with Tailwind CSS. Find installation guides, usage patterns, and developer resources.",
-    images: ["https://orbitui.in/ogimage-orbitui.png"],
-    site: "@orbitui",
+      "Official cursorxui documentation for integrating React UI components with Tailwind CSS. Find installation guides, usage patterns, and developer resources.",
+    images: ["https://cursorxui.vercel.app/ogimage-cursorxui.png"],
+    site: "@cursorxui",
     creator: "@dhruvtripathi",
   },
   icons: {

@@ -37,7 +37,7 @@ export default function InstallationPage() {
         {/* Introduction */}
         <div className="space-y-6 text-base leading-relaxed">
           <p>
-            OrbitUI is designed to work seamlessly within modern React frameworks. The recommended stack is <strong>Next.js (App Router)</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>. This setup ensures optimal rendering, type safety, and complete style control.
+            CursorXUI is designed to work seamlessly within modern React frameworks. The recommended stack is <strong>Next.js (App Router)</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>. This setup ensures optimal rendering, type safety, and complete style control.
           </p>
         </div>
 

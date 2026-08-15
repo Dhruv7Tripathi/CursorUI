@@ -16,7 +16,7 @@ export default function IntroductionPage() {
         {/* Main Content */}
         <div className="space-y-6 text-base leading-relaxed">
           <p>
-            OrbitUI is a collection of beautifully designed, customizable
+            CursorXUI is a collection of beautifully designed, customizable
             components you can <strong>copy and paste</strong> directly into
             your projects. These components are <em>flexible</em>,{" "}
             <em>accessible</em>, and <em>open-source</em>.
@@ -24,7 +24,7 @@ export default function IntroductionPage() {
 
           <p>
             This is <strong className="text-foreground">NOT</strong> a
-            traditional component library. Instead, OrbitUI is a toolkit of
+            traditional component library. Instead, CursorXUI is a toolkit of
             reusable components meant to help you create a unique, scalable UI
             without dependency constraints.
           </p>
@@ -35,7 +35,7 @@ export default function IntroductionPage() {
             </h2>
 
             <p className="mb-4">
-              Unlike traditional libraries, OrbitUI is not available as an
+              Unlike traditional libraries, CursorXUI is not available as an
               installable npm package. You{" "}
               <strong>won&apos;t add it as a dependency</strong>; instead, you
               choose and integrate only the components you need by copying and
@@ -48,7 +48,7 @@ export default function IntroductionPage() {
               id="philosophy"
               className="border-l-2 border-border pl-4 italic text-muted-foreground"
             >
-              Use OrbitUI as a foundation to build your own tailored component
+              Use CursorXUI as a foundation to build your own tailored component
               experiences.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function IntroductionPage() {
         <div className="space-y-4 rounded-lg bg-neutral-200/50 p-6 dark:bg-muted/50">
           <p className="text-sm text-muted-foreground">
             <strong>Designed for seamless compatibility</strong> with leading
-            frameworks, OrbitUI empowers developers to streamline their
+            frameworks, CursorXUI empowers developers to streamline their
             workflow and create with ease.
           </p>
         </div>

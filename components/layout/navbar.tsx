@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className="flex items-center gap-0.5">
 
               <Link
-                href="https://github.com/dhruv7tripathi/CursorXUI"
+                href="https://github.com/dhruv7tripathi/CursorUI"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-9 items-center gap-2 rounded-lg border border-border px-2.5 text-sm font-medium transition-colors hover:bg-white dark:hover:bg-black sm:px-3 lg:px-4"
