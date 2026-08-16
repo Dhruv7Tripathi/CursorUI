@@ -3,9 +3,19 @@ import PreviewComponentContainer from "@/components/content/previewcomponentcont
 import MainContentContainer from "@/components/content/maincontentcontainer";
 
 import LivePreviewComponent from "@/components/layout/livepreview";
-import CrystalShatterText from "@/app/(primary)/components/CrystalShatterText/_components/crystalshattertext";
 import { Code2 } from "lucide-react";
-
+import dynamic from "next/dynamic";
+const CrystalShatterText = dynamic(
+  () => import("@/app/(primary)/components/CrystalShatterText/_components/crystalshattertext"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="text-8xl font-black tracking-wider text-black dark:text-white">
+        Lucifer in Hell
+      </div>
+    ),
+  }
+);
 const CrystalShatterTextPreview = () => {
   return (
     <MainContentContainer>

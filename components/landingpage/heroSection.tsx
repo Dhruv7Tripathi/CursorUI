@@ -4,7 +4,6 @@ import { ArrowRight } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import Link from "next/link";
 import { Navbar } from "@/components/landingpage/landing-navbar";
-// import { OrbitPreview } from "@/components/landingpage/orbit-preview";
 
 export default function Page() {
     return (
