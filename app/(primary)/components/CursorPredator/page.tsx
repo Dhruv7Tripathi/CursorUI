@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "CursorXUI ",
     images: [
       {
-        url: "https://cursorxui.vercel.app/ogimage-CursorXUI .png",
+        url: "https://cursorxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Cursor Predator - CursorXUI ",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
       "Cursor Predator — Interactive Particle Background | CursorXUI ",
     description:
       "A lightweight HTML5 canvas particle animation that repels from the cursor and smoothly reforms into a dynamic grid.",
-    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI .png"],
+    images: ["https://cursorxui.vercel.app/og-image.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

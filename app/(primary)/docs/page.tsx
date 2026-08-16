@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "cursorxui",
     images: [
       {
-        url: "https://cursorxui.vercel.app/ogimage-cursorxui.png",
+        url: "https://cursorxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "cursorxui Documentation Open Graph Image",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     title: "cursorxui Documentation — React Component Library Guide | cursorxui",
     description:
       "Official cursorxui documentation for integrating React UI components with Tailwind CSS. Find installation guides, usage patterns, and developer resources.",
-    images: ["https://cursorxui.vercel.app/ogimage-cursorxui.png"],
+    images: ["https://cursorxui.vercel.app/og-image.png"],
     site: "@cursorxui",
-    creator: "@dhruvtripathi",
+    creator: "@dhruvtripathi77",
   },
   icons: {
     icon: "/favicon.ico",

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "CursorXUI ",
     images: [
       {
-        url: "https://cursorxui.vercel.app/ogimage-CursorXUI .png",
+        url: "https://cursorxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Fluid Cube Grid - CursorXUI ",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
       "Fluid Cube Grid — Interactive React Three Fiber Component | CursorXUI ",
     description:
       "Create stunning interactive 3D hero sections using React Three Fiber, Three.js, and CursorXUI .",
-    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI .png"],
+    images: ["https://cursorxui.vercel.app/og-image.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

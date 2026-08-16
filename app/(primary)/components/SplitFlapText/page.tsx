@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "OrbitUI",
     images: [
       {
-        url: "https://orbitui.in/ogimage-orbitui.png",
+        url: "https://orbitui.in/og-image.png",
         width: 1200,
         height: 630,
         alt: "OrbitUI Open Graph Image",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "Animated Form Component for React — Smooth UI/UX with Framer Motion | OrbitUI",
     description:
       "OrbitUI's Animated Form component enables smooth, accessible, and customizable forms in React apps. Powered by TailwindCSS & Framer Motion.",
-    images: ["https://orbitui.in/ogimage-orbitui.png"],
+    images: ["https://orbitui.in/og-image.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

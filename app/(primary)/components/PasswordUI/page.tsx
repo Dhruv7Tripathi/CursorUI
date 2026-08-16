@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "cursorxui",
     images: [
       {
-        url: "https://cursorxui.vercel.app/ogimage-cursorxui.png",
+        url: "https://cursorxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Password UI - cursorxui",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Password UI — Interactive Password Strength Component | cursorxui",
     description:
       "Interactive password strength interface with animated mascot and real-time validation.",
-    images: ["https://cursorxui.vercel.app/ogimage-cursorxui.png"],
+    images: ["https://cursorxui.vercel.app/og-image.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

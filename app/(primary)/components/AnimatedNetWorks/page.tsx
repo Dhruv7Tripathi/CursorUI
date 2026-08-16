@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "cursorxui",
     images: [
       {
-        url: "https://cursorxui.vercel.app/ogimage-cursorxui.png",
+        url: "https://cursorxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "cursorxui Open Graph Image",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "Animated Form Component for React — Smooth UI/UX with Framer Motion | cursorxui",
     description:
       "cursorxui's Animated Form component enables smooth, accessible, and customizable forms in React apps. Powered by TailwindCSS & Framer Motion.",
-    images: ["https://cursorxui.in/ogimage-cursorxui.png"],
+    images: ["https://cursorxui.vercel.app/og-image.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "CursorXUI",
     images: [
       {
-        url: "https://cursorxui.vercel.app/ogimage-CursorXUI.png",
+        url: "https://cursorxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "CursorXUI Open Graph Image",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       "Gravity Well Component for React — Interactive Particle Physics | CursorXUI",
     description:
       "Create beautiful particle simulations with gravity wells, black holes, and orbit effects using CursorXUI's React Canvas component.",
-    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI.png"],
+    images: ["https://cursorxui.vercel.app/og-image.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },

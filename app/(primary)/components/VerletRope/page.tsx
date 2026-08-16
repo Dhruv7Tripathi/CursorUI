@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "CursorXUI",
     images: [
       {
-        url: "https://cursorxui.vercel.app/ogimage-CursorXUI.png",
+        url: "https://cursorxui.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "CursorXUI Open Graph Image",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
       "Verlet Rope Component for React — Interactive Canvas Physics | CursorXUI",
     description:
       "Create realistic rope simulations with draggable nodes, wind effects, gravity, and smooth Verlet physics using CursorXUI.",
-    images: ["https://cursorxui.vercel.app/ogimage-CursorXUI.png"],
+    images: ["https://cursorxui.vercel.app/og-image.png"],
     site: "@dhruv7tripathi",
     creator: "@dhruv7tripathi",
   },
