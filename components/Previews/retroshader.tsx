@@ -30,7 +30,7 @@ const RetroShaderPreview = () => {
 
         <div className="bg-white dark:bg-black">
           <PreviewComponentContainer>
-            <div className="h-64 w-full overflow-hidden rounded-lg sm:h-80 sm:rounded-xl md:h-96 lg:h-[28rem] xl:h-125">
+            <div className="h-64 w-full overflow-hidden  sm:h-80 sm:rounded-xl md:h-96 lg:h-[28rem] xl:h-125">
               <RetroShader />
             </div>
           </PreviewComponentContainer>
@@ -45,7 +45,7 @@ export default RetroShaderPreview;
 export const LivePreviewRetroShader = () => {
   return (
     <LivePreviewComponent>
-      <div className="h-64 w-full overflow-hidden rounded-xl sm:h-80 md:h-96 lg:h-[28rem] xl:h-125">
+      <div className="h-64 w-full overflow-hidden  sm:h-80 md:h-96 lg:h-[28rem] xl:h-125">
         <RetroShader />
       </div>
     </LivePreviewComponent>

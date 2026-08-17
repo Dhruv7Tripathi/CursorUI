@@ -53,7 +53,7 @@ const VerletRopePreview = () => {
 
         <div className="bg-white dark:bg-black">
           <PreviewComponentContainer>
-            <div className="relative flex h-64 w-full flex-col items-center justify-center rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-6 sm:h-80 sm:rounded-xl sm:px-6 md:h-96 md:px-8 lg:h-[28rem]">
+            <div className="relative flex h-64 w-full flex-col items-center justify-center  bg-neutral-950 px-4 py-6 sm:h-80 sm:rounded-xl sm:px-6 md:h-96 md:px-8 lg:h-[28rem]">
               <VerletRope
                 height={ropeHeight}
                 windTrigger={wind}

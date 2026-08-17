@@ -40,7 +40,7 @@ const CrystalShatterTextPreview = () => {
 
         <div className="bg-white dark:bg-black">
           <PreviewComponentContainer>
-            <div className="flex h-64 w-full items-center justify-center rounded-lg border border-neutral-200 px-4 dark:border-neutral-800 sm:h-80 sm:rounded-xl md:h-96 lg:h-[28rem] xl:h-125 bg-white dark:bg-black">
+            <div className="flex h-64 w-full items-center justify-center  px-4 dark:border-neutral-800 sm:h-80 sm:rounded-xl md:h-96 lg:h-[28rem] xl:h-125 bg-white dark:bg-black">
               <CrystalShatterText
                 text="Lucifer in Hell"
                 className="text-center text-4xl font-black tracking-wider text-black dark:text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"

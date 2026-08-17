@@ -30,7 +30,7 @@ const AnimatedNetworkPreview = () => {
 
         <div className="bg-white dark:bg-black">
           <PreviewComponentContainer>
-            <div className="flex h-64 w-full items-center justify-center rounded-lg border border-zinc-800 bg-black sm:h-80 sm:rounded-xl md:h-96 lg:h-[28rem] xl:h-125">
+            <div className="flex h-64 w-full items-center justify-center   border-zinc-800 bg-black sm:h-80 sm:rounded-xl md:h-96 lg:h-[28rem] xl:h-125">
               <AnimatedNetwork />
             </div>
           </PreviewComponentContainer>

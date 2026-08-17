@@ -57,9 +57,6 @@ export default function Page() {
                         Free and open source. Built for the dev community.
                     </p>
                 </div>
-
-                {/* Component preview */}
-                {/* <OrbitPreview /> */}
             </section>
         </main>
     );
