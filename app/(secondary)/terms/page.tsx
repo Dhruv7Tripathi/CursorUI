@@ -1,103 +1,209 @@
-'use client';
-
-import React from 'react';
+"use client";
 
 export default function TermsPage() {
   return (
     <div className="relative min-h-screen py-16 md:py-24 bg-white dark:bg-zinc-950 text-neutral-900 dark:text-neutral-50 transition-colors duration-300">
-
       {/* Background glowing gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(99,102,241,0.04)_0%,transparent_40%)] pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(168,85,247,0.04)_0%,transparent_40%)] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6">
-
         {/* Header */}
         <div className="border-b border-neutral-200/50 dark:border-white/5 pb-8 mb-12">
           <span className="text-xs font-semibold uppercase tracking-wider text-indigo-500">
             Legal Agreement
           </span>
+
           <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mt-2 mb-4">
             Terms and Conditions
           </h1>
-          <p className="text-sm text-neutral-500">
-            Last updated: August 3, 2026. Please read these terms carefully before purchasing or using OrbitUI.
+
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+            Last updated: August 17, 2026
           </p>
         </div>
 
         {/* Content Sections */}
         <div className="space-y-10 text-sm md:text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
-
           {/* Section 1 */}
           <section className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-100">
-              1. Grant of License
+              1. About CursorXUI
             </h2>
+
             <p>
-              By purchasing the OrbitUI component library for the one-time fee of $15 USD, OrbitUI grants you a non-exclusive, non-transferable, worldwide commercial license to use, customize, and integrate the components into your projects.
+              CursorXUI is a free and open-source UI component library designed
+              to help developers build modern web applications using reusable
+              and customizable components.
             </p>
-            <p className="font-semibold text-neutral-700 dark:text-neutral-300">
-              Under this license, you CAN:
+
+            <p>
+              CursorXUI is provided free of charge and is intended for both
+              personal and commercial use, subject to the terms of the
+              applicable open-source license.
             </p>
-            <ul className="list-disc list-inside pl-4 space-y-1.5">
-              <li>Use the components to build unlimited commercial websites, client projects, or personal portfolios.</li>
-              <li>Modify, compile, and structure the code blocks to fit your application's requirements.</li>
-            </ul>
-            <p className="font-semibold text-neutral-700 dark:text-neutral-300 mt-2">
-              Under this license, you CANNOT:
-            </p>
-            <ul className="list-disc list-inside pl-4 space-y-1.5">
-              <li>Redistribute, sell, lease, sub-license, or share the source code components as standalone templates, UI kits, or component files.</li>
-              <li>Incorporate OrbitUI components in site builders, CMS templates, or themes designed for redistribution/resale to third-parties.</li>
-            </ul>
           </section>
 
           {/* Section 2 */}
           <section className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-100">
-              2. Fees and Purchase
+              2. License and Usage
             </h2>
+
             <p>
-              Access to OrbitUI requires a one-time payment of $15 USD. All payments are processed securely through our authorized payment processors (such as Stripe). Once payment is approved, your access to the component directory and documentation is unlocked immediately.
+              CursorXUI is open source. You are free to use, modify, and
+              integrate the components into your own projects, including
+              personal, educational, and commercial projects, subject to the
+              terms of the project's open-source license.
             </p>
-            <p>
-              Due to the digital nature of our product (immediate access to downloadable source code), we do not offer refunds once components have been accessed or downloaded, unless required by local consumer laws.
+
+            <p className="font-semibold text-neutral-700 dark:text-neutral-300">
+              You may:
             </p>
+
+            <ul className="list-disc list-inside pl-4 space-y-1.5">
+              <li>Use CursorXUI components in personal projects.</li>
+              <li>Use CursorXUI components in commercial projects.</li>
+              <li>Modify and customize the source code.</li>
+              <li>Integrate the components into your own applications.</li>
+              <li>Use the components to create websites and web applications.</li>
+              <li>Fork the project and contribute improvements.</li>
+            </ul>
+
+            <p className="font-semibold text-neutral-700 dark:text-neutral-300 mt-2">
+              You may not:
+            </p>
+
+            <ul className="list-disc list-inside pl-4 space-y-1.5">
+              <li>
+                Claim the original CursorXUI project or its original components
+                as your own work.
+              </li>
+              <li>
+                Remove or modify existing license or copyright notices when
+                the applicable license requires them to remain.
+              </li>
+              <li>
+                Use CursorXUI in a way that violates the applicable
+                open-source license or applicable law.
+              </li>
+            </ul>
           </section>
 
           {/* Section 3 */}
           <section className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-100">
-              3. GSAP & Third-Party Dependencies
+              3. No Payment or Subscription
             </h2>
+
             <p>
-              OrbitUI components incorporate animations created with external libraries, including GreenSock Animation Platform (GSAP).
+              CursorXUI is completely free to use. There are no required
+              purchases, subscriptions, or license fees for accessing or using
+              the library.
             </p>
+
             <p>
-              While OrbitUI provides the implementation code structure, you are responsible for adhering to the licensing terms of GSAP. Certain commercial uses of GSAP animations (e.g., in products where multiple customers are charged for access) may require a separate GSAP Commercial License.
+              Because CursorXUI is provided free of charge, no refunds or
+              payment-related claims apply to the library itself.
             </p>
           </section>
 
           {/* Section 4 */}
           <section className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-100">
-              4. Disclaimer of Warranties
+              4. Third-Party Dependencies
             </h2>
+
             <p>
-              OrbitUI components are provided &quot;as is&quot; and &quot;as available&quot; without warranties of any kind, either express or implied, including but not limited to compatibility with future releases of Next.js, React, Tailwind CSS, or third-party web browsers.
+              Some CursorXUI components may use third-party libraries,
+              frameworks, fonts, icons, or other dependencies.
+            </p>
+
+            <p>
+              These dependencies are governed by their respective licenses and
+              terms. You are responsible for complying with the licenses of
+              any third-party dependencies used in your project.
             </p>
           </section>
 
           {/* Section 5 */}
           <section className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-100">
-              5. Modification of Terms
+              5. Disclaimer of Warranties
             </h2>
+
             <p>
-              We reserve the right to modify these terms and pricing at any time. Any changes will be posted on this page with an updated modification date. Your continued use of the components following updates constitutes acceptance of the new terms.
+              CursorXUI is provided &quot;as is&quot; and &quot;as
+              available&quot; without warranties of any kind, express or
+              implied.
+            </p>
+
+            <p>
+              We do not guarantee that the components will always be
+              compatible with future versions of React, Next.js, Tailwind CSS,
+              browsers, or other third-party technologies.
+            </p>
+
+            <p>
+              You are responsible for testing and validating CursorXUI
+              components before using them in production environments.
             </p>
           </section>
 
+          {/* Section 6 */}
+          <section className="space-y-3">
+            <h2 className="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-100">
+              6. Contributions
+            </h2>
+
+            <p>
+              CursorXUI welcomes contributions from the open-source community.
+              By submitting code, documentation, issues, or other contributions
+              to the project, you agree that your contributions may be used,
+              modified, and distributed as part of CursorXUI under the
+              project's applicable open-source license.
+            </p>
+          </section>
+
+          {/* Section 7 */}
+          <section className="space-y-3">
+            <h2 className="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-100">
+              7. Changes to These Terms
+            </h2>
+
+            <p>
+              These terms may be updated from time to time to reflect changes
+              to CursorXUI, its licensing, or applicable requirements.
+            </p>
+
+            <p>
+              Any updates will be published on this page along with an updated
+              modification date. Continued use of CursorXUI after changes are
+              published constitutes acceptance of the updated terms, where
+              applicable.
+            </p>
+          </section>
+
+          {/* Section 8 */}
+          <section className="space-y-3">
+            <h2 className="text-lg md:text-xl font-bold text-neutral-800 dark:text-neutral-100">
+              8. Open Source License
+            </h2>
+
+            <p>
+              CursorXUI is distributed under its designated open-source
+              license. Please refer to the project&apos;s LICENSE file in the
+              official repository for the complete and legally binding license
+              terms.
+            </p>
+
+            <p>
+              If there is any conflict between these general terms and the
+              applicable open-source license, the terms of the open-source
+              license will govern the use and distribution of the licensed
+              software.
+            </p>
+          </section>
         </div>
       </div>
     </div>
