@@ -42,7 +42,7 @@ export default function Page() {
                         </Link>
 
                         <Link
-                            href="https://github.com/Dhruv7Tripathi/OrbitUI"
+                            href="https://github.com/Dhruv7Tripathi/CursorUI"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg border border-border bg-card px-5 text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand sm:w-auto"
